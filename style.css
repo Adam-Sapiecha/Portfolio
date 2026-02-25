@@ -1,0 +1,64 @@
+:root {
+  --bg: #0b0c10;
+  --card: #111218;
+  --text: #e8e8ea;
+  --muted: #a8a8b3;
+  --border: #232430;
+  --accent: #7c5cff;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+body { background: var(--bg); color: var(--text); line-height: 1.55; }
+
+a { color: var(--text); text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.2); }
+a:hover { border-bottom-color: var(--accent); color: white; }
+
+.container { max-width: 980px; margin: 0 auto; padding: 28px 18px; }
+
+.top { display: flex; gap: 16px; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; }
+h1 { margin: 0 0 6px; font-size: 34px; }
+.subtitle { margin: 0 0 10px; color: var(--muted); }
+.links { margin: 0; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; color: var(--muted); }
+.links span { opacity: .6; }
+
+.cta { display: flex; gap: 10px; }
+.button {
+  padding: 10px 14px; border-radius: 12px;
+  background: var(--accent); color: white; border: 1px solid rgba(255,255,255,.1);
+}
+.button.ghost { background: transparent; border: 1px solid var(--border); color: var(--text); }
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+
+.grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 16px; margin-top: 16px; }
+@media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+
+h2 { margin: 0 0 10px; font-size: 20px; }
+h3 { margin: 16px 0 6px; font-size: 16px; }
+.muted { color: var(--muted); }
+
+.project { padding: 12px 0; border-top: 1px solid var(--border); }
+.project:first-of-type { border-top: none; }
+.project ul { margin: 8px 0 0 18px; color: var(--muted); }
+
+.proj-links { margin: 10px 0 0; color: var(--muted); display: flex; gap: 10px; align-items: center; }
+
+.tags { display: flex; gap: 8px; flex-wrap: wrap; }
+.tags span {
+  border: 1px solid var(--border);
+  padding: 6px 10px;
+  border-radius: 999px;
+  color: var(--muted);
+}
+
+.item { border-top: 1px solid var(--border); padding-top: 10px; margin-top: 10px; }
+.item-top { display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+
+.footer { padding-top: 8px; padding-bottom: 30px; }
