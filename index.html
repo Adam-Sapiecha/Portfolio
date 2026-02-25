@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Imię Nazwisko — Portfolio / CV</title>
+  <meta name="description" content="Wizytówka + CV + projekty" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="container">
+    <div class="top">
+      <div>
+        <h1>Imię Nazwisko</h1>
+        <p class="subtitle">Junior Web Developer • Frontend / Backend • Warszawa (zdalnie)</p>
+        <p class="links">
+          <a href="mailto:twojmail@example.com">twojmail@example.com</a>
+          <span>•</span>
+          <a href="https://github.com/TWOJLOGIN" target="_blank" rel="noreferrer">GitHub</a>
+          <span>•</span>
+          <a href="https://www.linkedin.com/in/twojprofil" target="_blank" rel="noreferrer">LinkedIn</a>
+        </p>
+      </div>
+
+      <div class="cta">
+        <a class="button" href="#projekty">Zobacz projekty</a>
+        <a class="button ghost" href="#cv">CV</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card" id="o-mnie">
+      <h2>O mnie</h2>
+      <p>
+        Krótki opis: w czym jesteś dobry, czego szukasz, jakie technologie ogarniasz.
+        3–5 zdań max. Konkret: “Buduję REST API w .NET, front w React, dbam o walidację i testy”.
+      </p>
+    </section>
+
+    <section class="grid" id="projekty">
+      <div class="card">
+        <h2>Projekty</h2>
+        <p class="muted">Najpierw 3–6 najlepszych (z linkami).</p>
+
+        <article class="project">
+          <h3>Nazwa projektu #1</h3>
+          <p class="muted">Krótko: co robi, dla kogo, jaka wartość (1–2 zdania).</p>
+          <ul>
+            <li>Tech: React, .NET, SQL, Docker</li>
+            <li>Co zrobiłeś: np. logika serwisowa, DTO, walidacja, endpointy</li>
+            <li>Najciekawsze: np. RAG / tool-calling / optymalizacja</li>
+          </ul>
+          <p class="proj-links">
+            <a href="https://github.com/TWOJLOGIN/repo" target="_blank" rel="noreferrer">Repo</a>
+            <span>•</span>
+            <a href="https://demo-link" target="_blank" rel="noreferrer">Demo</a>
+          </p>
+        </article>
+
+        <article class="project">
+          <h3>Nazwa projektu #2</h3>
+          <p class="muted">1–2 zdania opisu.</p>
+          <ul>
+            <li>Tech: …</li>
+            <li>Co zrobiłeś: …</li>
+          </ul>
+          <p class="proj-links">
+            <a href="https://github.com/TWOJLOGIN/repo2" target="_blank" rel="noreferrer">Repo</a>
+          </p>
+        </article>
+      </div>
+
+      <div class="card" id="cv">
+        <h2>CV (dłuższe)</h2>
+
+        <h3>Technologie</h3>
+        <p class="tags">
+          <span>.NET</span><span>C#</span><span>SQL</span><span>EF Core</span><span>React</span><span>HTML</span><span>CSS</span><span>JS</span><span>Git</span>
+        </p>
+
+        <h3>Doświadczenie / Nauka</h3>
+        <div class="item">
+          <div class="item-top">
+            <strong>Nazwa / Uczelnia / Kurs</strong>
+            <span class="muted">2024–2026</span>
+          </div>
+          <p class="muted">1–2 linijki: czym się zajmowałeś, co robiłeś praktycznie.</p>
+        </div>
+
+        <h3>Najmocniejsze punkty</h3>
+        <ul>
+          <li>Architektura warstwowa: Controller → Service → DB → DTO</li>
+          <li>Walidacja danych + własne wyjątki</li>
+          <li>Praktyka: projekty i wdrożenia na GitHub</li>
+        </ul>
+
+        <h3>Kontakt</h3>
+        <p>
+          Email: <a href="mailto:twojmail@example.com">twojmail@example.com</a><br/>
+          GitHub: <a href="https://github.com/TWOJLOGIN" target="_blank" rel="noreferrer">github.com/TWOJLOGIN</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p class="muted">© <span id="y"></span> Imię Nazwisko</p>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
