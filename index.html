@@ -1,164 +1,304 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Name — Portfolio</title>
-  <meta name="description" content="Portfolio / CV with projects and experience" />
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adam Sapiecha — Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header class="container">
-    <div class="header-top">
-      <div>
-        <h1>Your Name</h1>
-        <p class="subtitle">Junior Developer • Backend / Frontend • Warsaw / Remote</p>
-      </div>
 
-      <nav class="tabs" aria-label="Sections">
-        <button class="tab-btn active" data-tab="main">Main</button>
-        <button class="tab-btn" data-tab="experience">Experience</button>
-        <button class="tab-btn" data-tab="projects">Projects</button>
-      </nav>
-    </div>
-  </header>
+<!-- ================= HEADER ================= -->
+<header class="container topbar">
 
-  <main class="container">
-    <!-- MAIN TAB: About + Contact -->
-    <section id="main" class="tab active">
-      <div class="grid">
-        <div class="card">
-          <h2>About me</h2>
-          <p>
-            Write 3–5 sentences: who you are, what role you want, and what you build.
-            Example: I build REST APIs in .NET and web apps with React. I care about
-            clean architecture, validation, and readable code.
-          </p>
+  <div class="brand">
+    ADAM<span class="accent">.</span>
+  </div>
 
-          <h3>Highlights</h3>
-          <ul>
-            <li>Layered APIs: Controller → Service → DB → DTO</li>
-            <li>Validation-first approach + custom exceptions</li>
-            <li>Projects on GitHub with clear READMEs</li>
-          </ul>
-        </div>
+  <nav class="tabs">
+    <button class="tab-btn active" data-tab="main">Main</button>
+    <button class="tab-btn" data-tab="experience">Experience</button>
+    <button class="tab-btn" data-tab="projects">Projects</button>
+  </nav>
 
-        <div class="card">
-          <h2>Contact</h2>
-          <div class="contact">
-            <div class="row">
-              <span class="label">Email</span>
-              <a href="mailto:you@email.com">you@email.com</a>
-            </div>
-            <div class="row">
-              <span class="label">GitHub</span>
-              <a target="_blank" rel="noreferrer" href="https://github.com/YOURLOGIN">github.com/YOURLOGIN</a>
-            </div>
-            <div class="row">
-              <span class="label">LinkedIn</span>
-              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/YOURPROFILE">linkedin.com/in/YOURPROFILE</a>
-            </div>
-            <div class="row">
-              <span class="label">CV (PDF)</span>
-              <a href="cv.pdf">Download</a>
-            </div>
-          </div>
+</header>
 
-          <div class="buttons">
-            <a class="btn" href="#projects" data-jump="projects">See projects</a>
-            <a class="btn ghost" href="#experience" data-jump="experience">See experience</a>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- EXPERIENCE TAB -->
-    <section id="experience" class="tab">
-      <div class="card">
-        <h2>Experience</h2>
-        <p class="muted">Jobs, internships, university work, serious personal projects.</p>
+<!-- ================= CONTENT ================= -->
+<main class="container">
 
-        <div class="item">
-          <div class="item-top">
-            <strong>Role / Project Name</strong>
-            <span class="muted">2025 — 2026</span>
-          </div>
-          <div class="muted">Company / Personal</div>
-          <ul>
-            <li>What you built (specific outcome)</li>
-            <li>What you owned (your part)</li>
-            <li>Impact / scale (users, data, features)</li>
-          </ul>
-          <div class="chips">
-            <span>.NET</span><span>EF Core</span><span>SQL</span><span>REST</span>
-          </div>
-        </div>
+<!-- ================================================= -->
+<!-- ================= MAIN TAB ======================= -->
+<!-- ================================================= -->
 
-        <div class="item">
-          <div class="item-top">
-            <strong>Role / Project Name</strong>
-            <span class="muted">2024 — 2025</span>
-          </div>
-          <div class="muted">University / Freelance</div>
-          <ul>
-            <li>1–3 bullets max</li>
-          </ul>
-          <div class="chips">
-            <span>Python</span><span>Docker</span><span>Linux</span>
-          </div>
-        </div>
-      </div>
-    </section>
+<section id="main" class="tab active">
 
-    <!-- PROJECTS TAB -->
-    <section id="projects" class="tab">
-      <div class="card">
-        <h2>Projects</h2>
-        <p class="muted">Top 3–6 projects with links.</p>
+<div class="hero">
 
-        <div class="project">
-          <div class="project-top">
-            <h3>Project Name #1</h3>
-            <div class="links">
-              <a target="_blank" rel="noreferrer" href="https://github.com/YOURLOGIN/REPO">Repo</a>
-              <span>•</span>
-              <a target="_blank" rel="noreferrer" href="https://demo-link">Demo</a>
-            </div>
-          </div>
-          <p class="muted">One sentence: what it does + who it’s for.</p>
-          <ul>
-            <li>Your contribution: architecture, endpoints, UI, etc.</li>
-            <li>Interesting part: auth, performance, AI, etc.</li>
-          </ul>
-          <div class="chips">
-            <span>React</span><span>.NET</span><span>SQL</span>
-          </div>
-        </div>
+<div class="hero-left">
 
-        <div class="project">
-          <div class="project-top">
-            <h3>Project Name #2</h3>
-            <div class="links">
-              <a target="_blank" rel="noreferrer" href="https://github.com/YOURLOGIN/REPO2">Repo</a>
-            </div>
-          </div>
-          <p class="muted">One sentence description.</p>
-          <ul>
-            <li>Key feature</li>
-          </ul>
-          <div class="chips">
-            <span>Python</span><span>FastAPI</span>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+<h1 class="hero-title">
+Hello, I'm <span class="accent">Adam</span>
+</h1>
 
-  <footer class="container footer">
-    <span class="muted">© <span id="y"></span> Your Name</span>
-  </footer>
+<p class="hero-subtitle">
+AI & Backend Developer • Computer Science Student
+</p>
 
-  <script src="script.js"></script>
+<p class="hero-text">
+Computer Science student at the Polish-Japanese Academy of Information Technology
+focused on backend engineering, artificial intelligence and cloud systems.
+I build complete solutions combining APIs, machine learning and scalable architecture.
+</p>
+
+<div class="cta">
+<a class="btn" href="mailto:adam.sapiecha05@gmail.com">Contact me</a>
+<button class="btn ghost" data-jump="projects">View Projects</button>
+</div>
+
+<div class="contact-mini">
+<a target="_blank" href="https://github.com/Adam-Sapiecha">GitHub</a>
+<span>•</span>
+<a href="mailto:adam.sapiecha05@gmail.com">Email</a>
+<span>•</span>
+<a href="tel:+48507593289">+48 507 593 289</a>
+</div>
+
+</div>
+
+<div class="hero-right">
+<img src="assets/me.jpg" class="hero-photo" alt="Profile photo">
+</div>
+
+</div>
+
+
+<!-- ABOUT -->
+<div class="card">
+<h2>About Me</h2>
+
+<p>
+I specialize in backend systems and AI-powered applications.
+My work connects software engineering with machine learning,
+especially RAG systems, computer vision and data automation.
+</p>
+
+<p>
+I enjoy designing structured architectures with clear separation of logic,
+strong validation and scalable APIs. Most projects I build are complete
+end-to-end systems where I handle both architecture and implementation.
+</p>
+
+<p>
+Currently seeking opportunities as a Junior AI, Backend or Fullstack Developer
+where I can contribute to real production systems and continue growing as an engineer.
+</p>
+</div>
+
+
+<!-- EDUCATION -->
+<div class="card">
+<h2>Education</h2>
+
+<strong>Polish-Japanese Academy of Information Technology (PJATK)</strong><br>
+B.Sc. Computer Science — Engineering Degree<br>
+<span class="muted">09/2023 – Present</span>
+
+<ul>
+<li>Software engineering and backend development</li>
+<li>Artificial intelligence and machine learning</li>
+<li>Cloud computing and distributed systems</li>
+<li>Linux, databases and networking fundamentals</li>
+</ul>
+</div>
+
+
+<div class="below-hero">
+
+<div class="card">
+<h2>Core Skills</h2>
+<div class="chips">
+<span>Python</span>
+<span>FastAPI</span>
+<span>Node.js</span>
+<span>SQL</span>
+<span>Docker</span>
+<span>Linux</span>
+<span>REST API</span>
+<span>Git</span>
+</div>
+</div>
+
+<div class="card">
+<h2>AI & Cloud</h2>
+<div class="chips">
+<span>RAG Systems</span>
+<span>Embeddings</span>
+<span>YOLOv8</span>
+<span>PyTorch</span>
+<span>OpenVINO</span>
+<span>AWS</span>
+<span>GCP</span>
+<span>Firebase</span>
+</div>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- ================= EXPERIENCE ===================== -->
+<!-- ================================================= -->
+
+<section id="experience" class="tab">
+
+<div class="card">
+<h2>Professional Experience</h2>
+
+<div class="item">
+<div class="item-top">
+<strong>Fullstack Developer — Fundacja Sorno</strong>
+<span class="muted">08/2024 – Present</span>
+</div>
+
+<p>
+Designed and developed a medical platform delivering patient test results
+and handling subscription payments.
+</p>
+
+<ul>
+<li>Designed backend architecture for web and mobile applications</li>
+<li>Implemented REST APIs using FastAPI and Node.js</li>
+<li>Integrated Stripe payment and subscription workflows</li>
+<li>Managed cloud integrations and databases (Firebase, MongoDB, GCP)</li>
+<li>Maintained system stability and feature development</li>
+</ul>
+</div>
+
+
+<div class="item">
+<div class="item-top">
+<strong>QA Tester / Data Analyst — Tikrow</strong>
+<span class="muted">07/2025 – Present</span>
+</div>
+
+<p>
+Worked on data automation and AI-assisted product development.
+</p>
+
+<ul>
+<li>Automated data processing pipelines in Python</li>
+<li>Developed ML models detecting patterns and anomalies</li>
+<li>Worked with API integrations and datasets</li>
+<li>Modeled workflows supporting new features</li>
+</ul>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- ================= PROJECTS ======================= -->
+<!-- ================================================= -->
+
+<section id="projects" class="tab">
+
+<div class="card">
+<h2>Projects</h2>
+
+
+<div class="project">
+<div class="project-top">
+<h3>AI Posture Analysis System</h3>
+</div>
+
+<p class="muted">
+Computer vision system analyzing posture using depth camera data.
+</p>
+
+<ul>
+<li>Processed spatial data from Luxonis OAK-D camera</li>
+<li>Implemented pose detection using YOLOv8-Pose and BlazePose</li>
+<li>Detected posture asymmetry and deviations</li>
+<li>Generated diagnostic reports</li>
+</ul>
+
+<div class="chips">
+<span>Python</span>
+<span>YOLOv8</span>
+<span>PyTorch</span>
+<span>Computer Vision</span>
+</div>
+</div>
+
+
+<div class="project">
+<div class="project-top">
+<h3>Medical Client Portal</h3>
+</div>
+
+<p class="muted">
+Fullstack platform delivering medical results and managing subscriptions.
+</p>
+
+<ul>
+<li>Designed backend architecture and API layer</li>
+<li>Integrated Stripe payments and subscriptions</li>
+<li>Implemented authentication and cloud storage</li>
+<li>Deployed scalable cloud infrastructure</li>
+</ul>
+
+<div class="chips">
+<span>FastAPI</span>
+<span>Node.js</span>
+<span>Stripe</span>
+<span>Firebase</span>
+</div>
+</div>
+
+
+<div class="project">
+<div class="project-top">
+<h3>RAG & AI Agents Experiments</h3>
+</div>
+
+<p class="muted">
+Experiments with Retrieval Augmented Generation and AI agent workflows.
+</p>
+
+<ul>
+<li>Built embedding pipelines and vector retrieval systems</li>
+<li>Designed agent-based workflows</li>
+<li>Integrated LLM reasoning with external knowledge</li>
+</ul>
+
+<div class="chips">
+<span>RAG</span>
+<span>Embeddings</span>
+<span>LLM</span>
+<span>Vector DB</span>
+</div>
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="container footer">
+© <span id="year"></span> Adam Sapiecha
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>

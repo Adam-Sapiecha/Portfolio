@@ -12,14 +12,12 @@ document.querySelectorAll(".tab-btn").forEach(btn => {
   btn.addEventListener("click", () => setTab(btn.dataset.tab));
 });
 
-document.querySelectorAll("[data-jump]").forEach(a => {
-  a.addEventListener("click", (e) => {
+document.querySelectorAll("[data-jump]").forEach(el => {
+  el.addEventListener("click", (e) => {
     e.preventDefault();
-    setTab(a.dataset.jump);
+    setTab(el.dataset.jump);
   });
 });
 
-document.getElementById("y").textContent = new Date().getFullYear();
-
 const start = location.hash.replace("#", "");
-if (start === "experience" || start === "projects" || start === "main") setTab(start);
+if (["main","experience","projects"].includes(start)) setTab(start);
