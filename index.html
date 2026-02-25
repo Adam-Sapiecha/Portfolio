@@ -1,115 +1,164 @@
 <!doctype html>
-<html lang="pl">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Imię Nazwisko — Portfolio / CV</title>
-  <meta name="description" content="Wizytówka + CV + projekty" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Portfolio / CV with projects and experience" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <header class="container">
-    <div class="top">
+    <div class="header-top">
       <div>
-        <h1>Imię Nazwisko</h1>
-        <p class="subtitle">Junior Web Developer • Frontend / Backend • Warszawa (zdalnie)</p>
-        <p class="links">
-          <a href="mailto:twojmail@example.com">twojmail@example.com</a>
-          <span>•</span>
-          <a href="https://github.com/TWOJLOGIN" target="_blank" rel="noreferrer">GitHub</a>
-          <span>•</span>
-          <a href="https://www.linkedin.com/in/twojprofil" target="_blank" rel="noreferrer">LinkedIn</a>
-        </p>
+        <h1>Your Name</h1>
+        <p class="subtitle">Junior Developer • Backend / Frontend • Warsaw / Remote</p>
       </div>
 
-      <div class="cta">
-        <a class="button" href="#projekty">Zobacz projekty</a>
-        <a class="button ghost" href="#cv">CV</a>
-      </div>
+      <nav class="tabs" aria-label="Sections">
+        <button class="tab-btn active" data-tab="main">Main</button>
+        <button class="tab-btn" data-tab="experience">Experience</button>
+        <button class="tab-btn" data-tab="projects">Projects</button>
+      </nav>
     </div>
   </header>
 
   <main class="container">
-    <section class="card" id="o-mnie">
-      <h2>O mnie</h2>
-      <p>
-        Krótki opis: w czym jesteś dobry, czego szukasz, jakie technologie ogarniasz.
-        3–5 zdań max. Konkret: “Buduję REST API w .NET, front w React, dbam o walidację i testy”.
-      </p>
-    </section>
-
-    <section class="grid" id="projekty">
-      <div class="card">
-        <h2>Projekty</h2>
-        <p class="muted">Najpierw 3–6 najlepszych (z linkami).</p>
-
-        <article class="project">
-          <h3>Nazwa projektu #1</h3>
-          <p class="muted">Krótko: co robi, dla kogo, jaka wartość (1–2 zdania).</p>
-          <ul>
-            <li>Tech: React, .NET, SQL, Docker</li>
-            <li>Co zrobiłeś: np. logika serwisowa, DTO, walidacja, endpointy</li>
-            <li>Najciekawsze: np. RAG / tool-calling / optymalizacja</li>
-          </ul>
-          <p class="proj-links">
-            <a href="https://github.com/TWOJLOGIN/repo" target="_blank" rel="noreferrer">Repo</a>
-            <span>•</span>
-            <a href="https://demo-link" target="_blank" rel="noreferrer">Demo</a>
+    <!-- MAIN TAB: About + Contact -->
+    <section id="main" class="tab active">
+      <div class="grid">
+        <div class="card">
+          <h2>About me</h2>
+          <p>
+            Write 3–5 sentences: who you are, what role you want, and what you build.
+            Example: I build REST APIs in .NET and web apps with React. I care about
+            clean architecture, validation, and readable code.
           </p>
-        </article>
 
-        <article class="project">
-          <h3>Nazwa projektu #2</h3>
-          <p class="muted">1–2 zdania opisu.</p>
+          <h3>Highlights</h3>
           <ul>
-            <li>Tech: …</li>
-            <li>Co zrobiłeś: …</li>
+            <li>Layered APIs: Controller → Service → DB → DTO</li>
+            <li>Validation-first approach + custom exceptions</li>
+            <li>Projects on GitHub with clear READMEs</li>
           </ul>
-          <p class="proj-links">
-            <a href="https://github.com/TWOJLOGIN/repo2" target="_blank" rel="noreferrer">Repo</a>
-          </p>
-        </article>
-      </div>
-
-      <div class="card" id="cv">
-        <h2>CV (dłuższe)</h2>
-
-        <h3>Technologie</h3>
-        <p class="tags">
-          <span>.NET</span><span>C#</span><span>SQL</span><span>EF Core</span><span>React</span><span>HTML</span><span>CSS</span><span>JS</span><span>Git</span>
-        </p>
-
-        <h3>Doświadczenie / Nauka</h3>
-        <div class="item">
-          <div class="item-top">
-            <strong>Nazwa / Uczelnia / Kurs</strong>
-            <span class="muted">2024–2026</span>
-          </div>
-          <p class="muted">1–2 linijki: czym się zajmowałeś, co robiłeś praktycznie.</p>
         </div>
 
-        <h3>Najmocniejsze punkty</h3>
-        <ul>
-          <li>Architektura warstwowa: Controller → Service → DB → DTO</li>
-          <li>Walidacja danych + własne wyjątki</li>
-          <li>Praktyka: projekty i wdrożenia na GitHub</li>
-        </ul>
+        <div class="card">
+          <h2>Contact</h2>
+          <div class="contact">
+            <div class="row">
+              <span class="label">Email</span>
+              <a href="mailto:you@email.com">you@email.com</a>
+            </div>
+            <div class="row">
+              <span class="label">GitHub</span>
+              <a target="_blank" rel="noreferrer" href="https://github.com/YOURLOGIN">github.com/YOURLOGIN</a>
+            </div>
+            <div class="row">
+              <span class="label">LinkedIn</span>
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/YOURPROFILE">linkedin.com/in/YOURPROFILE</a>
+            </div>
+            <div class="row">
+              <span class="label">CV (PDF)</span>
+              <a href="cv.pdf">Download</a>
+            </div>
+          </div>
 
-        <h3>Kontakt</h3>
-        <p>
-          Email: <a href="mailto:twojmail@example.com">twojmail@example.com</a><br/>
-          GitHub: <a href="https://github.com/TWOJLOGIN" target="_blank" rel="noreferrer">github.com/TWOJLOGIN</a>
-        </p>
+          <div class="buttons">
+            <a class="btn" href="#projects" data-jump="projects">See projects</a>
+            <a class="btn ghost" href="#experience" data-jump="experience">See experience</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE TAB -->
+    <section id="experience" class="tab">
+      <div class="card">
+        <h2>Experience</h2>
+        <p class="muted">Jobs, internships, university work, serious personal projects.</p>
+
+        <div class="item">
+          <div class="item-top">
+            <strong>Role / Project Name</strong>
+            <span class="muted">2025 — 2026</span>
+          </div>
+          <div class="muted">Company / Personal</div>
+          <ul>
+            <li>What you built (specific outcome)</li>
+            <li>What you owned (your part)</li>
+            <li>Impact / scale (users, data, features)</li>
+          </ul>
+          <div class="chips">
+            <span>.NET</span><span>EF Core</span><span>SQL</span><span>REST</span>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-top">
+            <strong>Role / Project Name</strong>
+            <span class="muted">2024 — 2025</span>
+          </div>
+          <div class="muted">University / Freelance</div>
+          <ul>
+            <li>1–3 bullets max</li>
+          </ul>
+          <div class="chips">
+            <span>Python</span><span>Docker</span><span>Linux</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS TAB -->
+    <section id="projects" class="tab">
+      <div class="card">
+        <h2>Projects</h2>
+        <p class="muted">Top 3–6 projects with links.</p>
+
+        <div class="project">
+          <div class="project-top">
+            <h3>Project Name #1</h3>
+            <div class="links">
+              <a target="_blank" rel="noreferrer" href="https://github.com/YOURLOGIN/REPO">Repo</a>
+              <span>•</span>
+              <a target="_blank" rel="noreferrer" href="https://demo-link">Demo</a>
+            </div>
+          </div>
+          <p class="muted">One sentence: what it does + who it’s for.</p>
+          <ul>
+            <li>Your contribution: architecture, endpoints, UI, etc.</li>
+            <li>Interesting part: auth, performance, AI, etc.</li>
+          </ul>
+          <div class="chips">
+            <span>React</span><span>.NET</span><span>SQL</span>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-top">
+            <h3>Project Name #2</h3>
+            <div class="links">
+              <a target="_blank" rel="noreferrer" href="https://github.com/YOURLOGIN/REPO2">Repo</a>
+            </div>
+          </div>
+          <p class="muted">One sentence description.</p>
+          <ul>
+            <li>Key feature</li>
+          </ul>
+          <div class="chips">
+            <span>Python</span><span>FastAPI</span>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="container footer">
-    <p class="muted">© <span id="y"></span> Imię Nazwisko</p>
+    <span class="muted">© <span id="y"></span> Your Name</span>
   </footer>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
