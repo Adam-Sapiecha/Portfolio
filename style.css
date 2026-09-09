@@ -329,21 +329,6 @@ p:last-child {
   object-position: center 28%;
 }
 
-.hero-photo figcaption {
-  border-top: 1px solid var(--line);
-  background: var(--surface);
-  padding: 18px 20px;
-  color: var(--muted);
-  font-size: 0.86rem;
-}
-
-.hero-photo strong {
-  display: block;
-  margin-bottom: 2px;
-  color: var(--text);
-  font-size: 1rem;
-}
-
 .button-row {
   display: flex;
   flex-wrap: wrap;
@@ -400,25 +385,6 @@ p:last-child {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 20;
 }
 
-.fact-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin-top: 48px;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-}
-
-.fact {
-  padding: 22px 26px;
-  border-left: 1px solid var(--line);
-}
-
-.fact:first-child {
-  padding-left: 0;
-  border-left: 0;
-}
-
-.fact-label,
 .contact-label,
 .project-kicker,
 .meta {
@@ -429,17 +395,16 @@ p:last-child {
   text-transform: uppercase;
 }
 
-.fact-value {
-  margin: 7px 0 0;
-  font-weight: 700;
-}
-
 .section-header {
   display: grid;
   grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
   gap: 56px;
   align-items: end;
   margin-bottom: 46px;
+}
+
+.section-header--single {
+  display: block;
 }
 
 .section-header p:last-child {
@@ -452,13 +417,8 @@ p:last-child {
 .experience-list,
 .project-list,
 .contact-list,
-.profile-links,
-.project-directory {
+.profile-links {
   border-top: 1px solid var(--line-strong);
-}
-
-.project-directory {
-  margin-top: 30px;
 }
 
 .experience-item {
@@ -529,6 +489,11 @@ p:last-child {
   text-decoration: none;
 }
 
+.project-list--compact .project-row {
+  grid-template-columns: 50px minmax(0, 1fr) auto;
+  align-items: center;
+}
+
 .project-row:hover h3 {
   color: var(--accent-dark);
   text-decoration: underline;
@@ -591,30 +556,6 @@ p:last-child {
 
 .page-intro .lead {
   max-width: 760px;
-}
-
-.project-directory-link {
-  display: grid;
-  grid-template-columns: 50px minmax(0, 1fr) auto;
-  gap: 24px;
-  align-items: center;
-  padding: 24px 0;
-  border-bottom: 1px solid var(--line);
-  text-decoration: none;
-}
-
-.project-directory-link:hover strong {
-  color: var(--accent-dark);
-}
-
-.project-directory-link strong {
-  font-size: 1.15rem;
-}
-
-.project-directory-link span:last-child {
-  color: var(--accent-dark);
-  font-size: 0.88rem;
-  font-weight: 700;
 }
 
 .project-detail {
@@ -731,18 +672,6 @@ p:last-child {
   min-height: 262px;
 }
 
-.photo-grid figcaption {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 14px 16px;
-  background: rgba(24, 33, 42, 0.84);
-  color: #fff;
-  font-size: 0.82rem;
-  font-weight: 650;
-}
-
 .activity-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -790,6 +719,10 @@ p:last-child {
   min-width: 0;
 }
 
+.contact-layout--single {
+  grid-template-columns: minmax(0, 760px);
+}
+
 .contact-list {
   margin-top: 42px;
 }
@@ -820,25 +753,6 @@ a.contact-item:hover .contact-value {
   color: var(--accent-dark);
   text-decoration: underline;
   text-underline-offset: 4px;
-}
-
-.contact-aside {
-  border-left: 3px solid var(--accent);
-  padding-left: 28px;
-}
-
-.contact-aside h2 {
-  font-size: 1.65rem;
-}
-
-.contact-aside ul {
-  margin: 24px 0 0;
-  padding-left: 20px;
-  color: var(--muted);
-}
-
-.contact-aside li + li {
-  margin-top: 10px;
 }
 
 .profile-links a {
@@ -996,9 +910,6 @@ a.contact-item:hover .contact-value {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .contact-aside {
-    margin-top: 12px;
-  }
 }
 
 @media (max-width: 620px) {
@@ -1083,21 +994,6 @@ a.contact-item:hover .contact-value {
     aspect-ratio: 4 / 4.6;
   }
 
-  .fact-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .fact,
-  .fact:first-child {
-    padding: 18px 0;
-    border-left: 0;
-    border-bottom: 1px solid var(--line);
-  }
-
-  .fact:last-child {
-    border-bottom: 0;
-  }
-
   .section-header {
     margin-bottom: 32px;
   }
@@ -1116,17 +1012,13 @@ a.contact-item:hover .contact-value {
     padding: 26px 0;
   }
 
+  .project-list--compact .project-row {
+    grid-template-columns: 34px minmax(0, 1fr);
+    align-items: start;
+  }
+
   .project-row > p,
   .project-link-label {
-    grid-column: 2;
-  }
-
-  .project-directory-link {
-    grid-template-columns: 34px minmax(0, 1fr);
-    gap: 14px;
-  }
-
-  .project-directory-link span:last-child {
     grid-column: 2;
   }
 
