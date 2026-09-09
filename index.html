@@ -1,276 +1,147 @@
 <!DOCTYPE html>
-<html class="dark" lang="pl">
+<html lang="pl">
 <head>
   <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Adam Sapiecha - Portfolio IT i developer</title>
-  <meta name="description" content="Portfolio Adama Sapiechy: developer i specjalista IT łączący backend, QA, Linux embedded, dane oraz AI." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adam Sapiecha - Junior Automotive Software Engineer</title>
+  <meta name="description" content="Portfolio Adama Sapiechy, Junior Automotive Software Engineera pracującego z Linuxem, SoC, Pythonem i systemami backendowymi." />
   <link rel="canonical" href="https://adam-sapiecha.github.io/Portfolio-AdamSapiecha/" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <meta property="og:type" content="profile" />
   <meta property="og:locale" content="pl_PL" />
-  <meta property="og:title" content="Adam Sapiecha - Portfolio IT i developer" />
-  <meta property="og:description" content="Portfolio Adama Sapiechy: developer i specjalista IT łączący backend, QA, Linux embedded, dane oraz AI." />
+  <meta property="og:title" content="Adam Sapiecha - Junior Automotive Software Engineer" />
+  <meta property="og:description" content="Portfolio Adama Sapiechy: automotive, Linux, SoC, Python i backend." />
   <meta property="og:url" content="https://adam-sapiecha.github.io/Portfolio-AdamSapiecha/" />
   <meta property="og:image" content="https://adam-sapiecha.github.io/Portfolio-AdamSapiecha/assets/Adam%20Sapiecha%20(1).jpg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Adam Sapiecha - Portfolio IT i developer" />
-  <meta name="twitter:description" content="Portfolio Adama Sapiechy: developer i specjalista IT łączący backend, QA, Linux embedded, dane oraz AI." />
+  <meta name="twitter:title" content="Adam Sapiecha - Junior Automotive Software Engineer" />
+  <meta name="twitter:description" content="Portfolio Adama Sapiechy: automotive, Linux, SoC, Python i backend." />
   <meta name="twitter:image" content="https://adam-sapiecha.github.io/Portfolio-AdamSapiecha/assets/Adam%20Sapiecha%20(1).jpg" />
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <script id="tailwind-config">
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            "primary-dim": "#00ec90",
-            "on-error": "#490006",
-            "surface-bright": "#262c36",
-            "secondary-fixed-dim": "#37d4ff",
-            "on-secondary-container": "#eef9ff",
-            "surface-container-low": "#0f141a",
-            "on-background": "#f1f3fc",
-            "on-primary-fixed": "#004627",
-            "primary-container": "#00fc9a",
-            "tertiary-container": "#7000ff",
-            "on-secondary": "#004050",
-            "on-tertiary-fixed": "#1f0052",
-            "on-tertiary": "#290067",
-            "inverse-primary": "#006d40",
-            "on-primary-fixed-variant": "#00653b",
-            "surface-container-lowest": "#000000",
-            "error-container": "#9f0519",
-            "surface": "#0a0e14",
-            "on-secondary-fixed": "#003a48",
-            "secondary-fixed": "#80deff",
-            "surface-container": "#151a21",
-            "primary-fixed-dim": "#00ec90",
-            "tertiary-fixed": "#bda1ff",
-            "secondary": "#00cffc",
-            "surface-dim": "#0a0e14",
-            "inverse-on-surface": "#51555c",
-            "secondary-dim": "#00c0ea",
-            "on-tertiary-container": "#f8f1ff",
-            "secondary-container": "#00677f",
-            "on-tertiary-fixed-variant": "#4700a7",
-            "surface-container-highest": "#20262f",
-            "tertiary-fixed-dim": "#b190ff",
-            "outline": "#72757d",
-            "surface-variant": "#20262f",
-            "background": "#0a0e14",
-            "tertiary-dim": "#874cff",
-            "on-surface-variant": "#a8abb3",
-            "surface-container-high": "#1b2028",
-            "error": "#ff716c",
-            "on-primary-container": "#005b34",
-            "tertiary": "#ac89ff",
-            "outline-variant": "#44484f",
-            "on-error-container": "#ffa8a3",
-            "primary-fixed": "#00fc9a",
-            "error-dim": "#d7383b",
-            "on-secondary-fixed-variant": "#00586d",
-            "surface-tint": "#a1ffc2",
-            "on-surface": "#f1f3fc",
-            "inverse-surface": "#f8f9ff",
-            "primary": "#a1ffc2",
-            "on-primary": "#00643a"
-          },
-          fontFamily: {
-            "headline": ["Space Grotesk"],
-            "body": ["Inter"],
-            "label": ["Space Grotesk"]
-          },
-          borderRadius: {
-            "DEFAULT": "0.125rem",
-            "lg": "0.25rem",
-            "xl": "0.5rem",
-            "full": "0.75rem"
-          }
-        }
-      }
-    };
-  </script>
-  <style>
-    .material-symbols-outlined {
-      font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
-    }
-    .glass-card {
-      background: rgba(32, 38, 47, 0.4);
-      backdrop-filter: blur(20px);
-      border: 1px solid rgba(68, 72, 79, 0.15);
-    }
-    .tonal-shift {
-      transition: background-color 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
-    }
-    .tonal-shift:hover {
-      transform: translateY(-4px);
-    }
-  </style>
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Adam Sapiecha",
+      "jobTitle": "Junior Automotive Software Engineer",
       "url": "https://adam-sapiecha.github.io/Portfolio-AdamSapiecha/",
       "image": "https://adam-sapiecha.github.io/Portfolio-AdamSapiecha/assets/Adam%20Sapiecha%20(1).jpg",
       "email": "mailto:adam.sapiecha05@gmail.com",
       "telephone": "+48507593289",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Warszawa",
-        "addressCountry": "PL"
-      },
-      "sameAs": [
-        "https://github.com/Adam-Sapiecha",
-        "https://www.linkedin.com/in/adam-sapiecha-686057314/"
-      ],
-      "knowsAbout": ["Python", "FastAPI", "Node.js", "QA", "Linux", "Embedded Linux", "Linux kernel", "SoC", "Data Analysis", "AI", "RAG", "Flutter"]
+      "address": { "@type": "PostalAddress", "addressLocality": "Warszawa", "addressCountry": "PL" },
+      "sameAs": ["https://github.com/Adam-Sapiecha", "https://www.linkedin.com/in/adam-sapiecha-686057314/"],
+      "knowsAbout": ["Python", "Linux", "Embedded Linux", "SoC", "Jenkins", "FastAPI", "Backend development", "Data analysis"]
     }
   </script>
 </head>
-<body class="bg-surface text-on-background font-body selection:bg-primary-container selection:text-on-primary-container" data-page="home" data-title-pl="Adam Sapiecha - Software Engineer | Linux, Embedded, Backend" data-title-en="Adam Sapiecha - Software Engineer | Linux, Embedded, Backend" data-description-pl="Portfolio Adama Sapiechy: software engineering, Linux embedded, SoC, Python, automatyzacja, backend i systemy AI." data-description-en="Adam Sapiecha's portfolio: software engineering, embedded Linux, SoC, Python automation, backend, and AI systems.">
+<body data-page="home" data-title-pl="Adam Sapiecha - Junior Automotive Software Engineer" data-title-en="Adam Sapiecha - Junior Automotive Software Engineer" data-description-pl="Portfolio Adama Sapiechy, Junior Automotive Software Engineera pracującego z Linuxem, SoC, Pythonem i systemami backendowymi." data-description-en="Portfolio of Adam Sapiecha, a Junior Automotive Software Engineer working with Linux, SoC platforms, Python, and backend systems.">
   <a class="skip-link" href="#main-content" data-pl="Przejdź do treści" data-en="Skip to content">Przejdź do treści</a>
-  <nav class="site-nav fixed top-0 z-50 w-full bg-[#0a0e14]/80 backdrop-blur-xl shadow-[0_0_20px_rgba(0,255,156,0.1)]" aria-label="Główna nawigacja" data-aria-label-pl="Główna nawigacja" data-aria-label-en="Main navigation">
-    <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-8">
-      <a class="nav-brand font-['Space_Grotesk'] text-xl font-bold tracking-tighter text-[#00FF9C]" href="index.html" aria-label="Adam Sapiecha">Adam Sapiecha</a>
-      <div class="desktop-nav hidden items-center gap-6 font-['Space_Grotesk'] tracking-tight lg:flex">
-        <a data-nav="home" class="transition-colors duration-200 hover:text-[#00FF9C]" href="index.html" data-pl="Główna" data-en="Home">Główna</a>
-        <a data-nav="projects" class="transition-colors duration-200 hover:text-[#00FF9C]" href="projects.html" data-pl="Projekty i praca" data-en="Projects and work">Projekty i praca</a>
-        <a data-nav="about" class="transition-colors duration-200 hover:text-[#00FF9C]" href="about.html" data-pl="O mnie" data-en="About me">O mnie</a>
-        <a data-nav="contact" class="transition-colors duration-200 hover:text-[#00FF9C]" href="contact.html" data-pl="Kontakt" data-en="Contact">Kontakt</a>
-      </div>
-      <div class="nav-actions flex items-center gap-3">
-        <button class="lang-btn border border-outline-variant px-3 py-2 text-xs uppercase tracking-[0.2em] text-on-surface-variant" data-lang="pl" type="button">PL</button>
-        <button class="lang-btn border border-outline-variant px-3 py-2 text-xs uppercase tracking-[0.2em] text-on-surface-variant" data-lang="en" type="button">EN</button>
-        <button class="menu-toggle material-symbols-outlined text-primary lg:hidden" data-menu-toggle type="button" aria-controls="mobile-navigation" aria-expanded="false" aria-label="Otwórz menu" data-label-open-pl="Otwórz menu" data-label-open-en="Open menu" data-label-close-pl="Zamknij menu" data-label-close-en="Close menu">menu</button>
-      </div>
-    </div>
-    <div id="mobile-navigation" class="hidden border-t border-outline-variant/30 bg-surface-container-low px-8 py-4 lg:hidden" data-mobile-nav>
-      <div class="flex flex-col gap-4 font-['Space_Grotesk'] tracking-tight">
+
+  <header class="site-header">
+    <nav class="nav-inner" aria-label="Główna nawigacja" data-aria-label-pl="Główna nawigacja" data-aria-label-en="Main navigation">
+      <a class="nav-brand" href="index.html" aria-label="Adam Sapiecha">Adam Sapiecha</a>
+      <div class="desktop-nav">
         <a data-nav="home" href="index.html" data-pl="Główna" data-en="Home">Główna</a>
-        <a data-nav="projects" href="projects.html" data-pl="Projekty i praca" data-en="Projects and work">Projekty i praca</a>
-        <a data-nav="about" href="about.html" data-pl="O mnie" data-en="About me">O mnie</a>
+        <a data-nav="projects" href="projects.html" data-pl="Projekty i doświadczenie" data-en="Projects and experience">Projekty i doświadczenie</a>
+        <a data-nav="about" href="about.html" data-pl="O mnie" data-en="About">O mnie</a>
+        <a data-nav="contact" href="contact.html" data-pl="Kontakt" data-en="Contact">Kontakt</a>
+      </div>
+      <div class="nav-actions">
+        <button class="lang-btn" data-lang="pl" type="button">PL</button>
+        <button class="lang-btn" data-lang="en" type="button">EN</button>
+        <button class="menu-toggle material-symbols-outlined" data-menu-toggle type="button" aria-controls="mobile-navigation" aria-expanded="false" aria-label="Otwórz menu" data-label-open-pl="Otwórz menu" data-label-open-en="Open menu" data-label-close-pl="Zamknij menu" data-label-close-en="Close menu">menu</button>
+      </div>
+    </nav>
+    <div id="mobile-navigation" class="mobile-nav-panel hidden" data-mobile-nav>
+      <div class="mobile-nav-links">
+        <a data-nav="home" href="index.html" data-pl="Główna" data-en="Home">Główna</a>
+        <a data-nav="projects" href="projects.html" data-pl="Projekty i doświadczenie" data-en="Projects and experience">Projekty i doświadczenie</a>
+        <a data-nav="about" href="about.html" data-pl="O mnie" data-en="About">O mnie</a>
         <a data-nav="contact" href="contact.html" data-pl="Kontakt" data-en="Contact">Kontakt</a>
       </div>
     </div>
-  </nav>
+  </header>
 
-  <main id="main-content" class="pt-20">
-    <section class="home-hero px-8 pb-20 pt-16 md:pb-24 md:pt-20">
-      <div class="home-hero-inner mx-auto max-w-7xl">
-        <div class="home-hero-copy">
-          <p class="font-mono text-xs uppercase text-primary" data-pl="SOFTWARE ENGINEER / WARSZAWA" data-en="SOFTWARE ENGINEER / WARSAW">SOFTWARE ENGINEER / WARSZAWA</p>
-          <h1 class="mt-5 font-headline text-5xl font-bold leading-[1.02] text-on-surface md:text-7xl">Adam Sapiecha</h1>
-          <p class="mt-6 max-w-3xl font-headline text-2xl font-medium leading-snug text-on-surface md:text-3xl" data-pl="Buduję i diagnozuję systemy od Linuxa i SoC po backend oraz rozwiązania oparte na danych." data-en="I build and diagnose systems spanning Linux and SoC platforms, backend services, and data-driven solutions.">Buduję i diagnozuję systemy od Linuxa i SoC po backend oraz rozwiązania oparte na danych.</p>
-          <p class="mt-5 max-w-2xl text-base leading-relaxed text-on-surface-variant md:text-lg" data-pl="Obecnie pracuję w Samsung R&amp;D Institute przy automotive, automatyzacji w Pythonie i środowiskach embedded Linux. Wcześniej dostarczałem produkcyjne systemy webowe, mobilne i AI." data-en="I currently work at Samsung R&amp;D Institute on automotive software, Python automation, and embedded Linux environments. Previously, I delivered production web, mobile, and AI systems.">Obecnie pracuję w Samsung R&amp;D Institute przy automotive, automatyzacji w Pythonie i środowiskach embedded Linux. Wcześniej dostarczałem produkcyjne systemy webowe, mobilne i AI.</p>
-          <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-            <a class="primary-action" href="projects.html"><span data-pl="Zobacz projekty" data-en="View projects">Zobacz projekty</span><span class="material-symbols-outlined text-base" aria-hidden="true">arrow_forward</span></a>
-            <a class="secondary-action" href="assets/Adam_Sapiecha_CV.pdf" download="Adam_Sapiecha_CV.pdf" target="_blank" rel="noreferrer"><span class="material-symbols-outlined text-base" aria-hidden="true">download</span><span data-pl="Pobierz CV" data-en="Download CV">Pobierz CV</span></a>
-            <a class="text-action" href="contact.html"><span data-pl="Kontakt" data-en="Contact">Kontakt</span><span class="material-symbols-outlined text-base" aria-hidden="true">arrow_forward</span></a>
+  <main id="main-content">
+    <div class="page-shell">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow" data-pl="Software engineering / Warszawa" data-en="Software engineering / Warsaw">Software engineering / Warszawa</p>
+          <h1>Adam Sapiecha</h1>
+          <p class="hero-role">Junior Automotive Software Engineer</p>
+          <p class="hero-description" data-pl="Pracuję z oprogramowaniem automotive w środowisku Linux/SoC. Łączę rozwój oprogramowania, automatyzację w Pythonie i diagnostykę systemów z wcześniejszym doświadczeniem backendowym." data-en="I work on automotive software in Linux/SoC environments. I combine software development, Python automation, and system diagnostics with previous backend experience.">Pracuję z oprogramowaniem automotive w środowisku Linux/SoC. Łączę rozwój oprogramowania, automatyzację w Pythonie i diagnostykę systemów z wcześniejszym doświadczeniem backendowym.</p>
+          <div class="button-row">
+            <a class="button" href="projects.html"><span data-pl="Zobacz projekty" data-en="View projects">Zobacz projekty</span><span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+            <a class="button button--secondary" href="assets/Adam_Sapiecha_CV.pdf" download="Adam_Sapiecha_CV.pdf" target="_blank" rel="noreferrer"><span class="material-symbols-outlined" aria-hidden="true">download</span><span data-pl="Pobierz CV" data-en="Download CV">Pobierz CV</span></a>
+            <a class="button button--text" href="contact.html" data-pl="Kontakt" data-en="Contact">Kontakt</a>
           </div>
-          <div class="home-proof-row mt-12">
-            <div class="home-proof-item"><p class="font-mono text-xs uppercase text-on-surface-variant" data-pl="Obecnie" data-en="Current">Obecnie</p><p class="mt-2 font-headline text-lg font-semibold">Samsung R&amp;D Institute</p></div>
-            <div class="home-proof-item"><p class="font-mono text-xs uppercase text-on-surface-variant" data-pl="Środowisko" data-en="Environment">Środowisko</p><p class="mt-2 font-headline text-lg font-semibold">Linux / Embedded / SoC</p></div>
-            <div class="home-proof-item"><p class="font-mono text-xs uppercase text-on-surface-variant" data-pl="Doświadczenie" data-en="Experience">Doświadczenie</p><p class="mt-2 font-headline text-lg font-semibold">Production + R&amp;D</p></div>
-          </div>
-        </div>
-        <div class="home-portrait-wrap">
-          <div class="home-portrait">
-            <img class="h-full w-full object-cover object-center" src="assets/Adam Sapiecha (1).jpg" width="1068" height="1556" loading="eager" fetchpriority="high" decoding="async" alt="Portret Adama Sapiechy" data-alt-pl="Portret Adama Sapiechy" data-alt-en="Adam Sapiecha portrait" />
-          </div>
-          <div class="home-current-role">
-            <p class="font-mono text-xs uppercase text-primary" data-pl="CURRENT ROLE" data-en="CURRENT ROLE">CURRENT ROLE</p>
-            <p class="mt-3 font-headline text-xl font-semibold" data-pl="Automotive Software Tester" data-en="Automotive Software Tester">Automotive Software Tester</p>
-            <p class="mt-2 text-sm leading-relaxed text-on-surface-variant">Python · Jenkins · Linux · SoC</p>
+          <div class="fact-grid">
+            <div class="fact"><p class="fact-label" data-pl="Obecnie" data-en="Current">Obecnie</p><p class="fact-value">Samsung R&amp;D Institute</p></div>
+            <div class="fact"><p class="fact-label" data-pl="Stanowisko" data-en="Role">Stanowisko</p><p class="fact-value">Junior Automotive Software Engineer</p></div>
+            <div class="fact"><p class="fact-label" data-pl="Środowisko" data-en="Environment">Środowisko</p><p class="fact-value">Linux / SoC / Python</p></div>
           </div>
         </div>
-      </div>
-    </section>
+        <figure class="hero-photo">
+          <img src="assets/Adam Sapiecha (1).jpg" width="1068" height="1556" loading="eager" fetchpriority="high" decoding="async" alt="Portret Adama Sapiechy" data-alt-pl="Portret Adama Sapiechy" data-alt-en="Portrait of Adam Sapiecha" />
+          <figcaption><strong>Adam Sapiecha</strong><span>Junior Automotive Software Engineer</span></figcaption>
+        </figure>
+      </section>
+    </div>
 
-    <section class="bg-surface-container-low px-8 py-24">
-      <div class="mx-auto max-w-7xl">
-        <div class="mb-12 grid gap-6 lg:grid-cols-[0.72fr_1.28fr] lg:items-end">
-          <div>
-            <p class="font-mono text-xs uppercase text-primary" data-pl="PROFESSIONAL SNAPSHOT" data-en="PROFESSIONAL SNAPSHOT">PROFESSIONAL SNAPSHOT</p>
-            <h2 class="mt-4 font-headline text-4xl font-bold md:text-5xl" data-pl="Doświadczenie poparte pracą produkcyjną." data-en="Experience grounded in production work.">Doświadczenie poparte pracą produkcyjną.</h2>
-          </div>
-          <p class="max-w-2xl text-lg leading-relaxed text-on-surface-variant" data-pl="Nie pokazuję samej listy technologii. Najważniejsze jest to, gdzie ich używałem: przy systemach automotive, produkcie medycznym i analizie jakości opartej na danych." data-en="I do not present technology as a checklist. What matters is where I used it: automotive systems, a production medical product, and data-driven quality analysis.">Nie pokazuję samej listy technologii. Najważniejsze jest to, gdzie ich używałem: przy systemach automotive, produkcie medycznym i analizie jakości opartej na danych.</p>
+    <section class="section section--muted" aria-labelledby="experience-heading">
+      <div class="page-shell">
+        <div class="section-header">
+          <div><p class="eyebrow" data-pl="Doświadczenie" data-en="Experience">Doświadczenie</p><h2 id="experience-heading" data-pl="Praca zawodowa" data-en="Professional experience">Praca zawodowa</h2></div>
+          <p data-pl="Najważniejsze role i zakres odpowiedzialności, bez rozbudowanych opisów technologii oderwanych od kontekstu." data-en="The most relevant roles and responsibilities, presented without technology lists detached from context.">Najważniejsze role i zakres odpowiedzialności, bez rozbudowanych opisów technologii oderwanych od kontekstu.</p>
         </div>
-        <div class="home-evidence-grid">
-          <article class="home-evidence-item">
-            <p class="font-mono text-xs uppercase text-primary">01 / SYSTEMS</p>
-            <h3 class="mt-5 font-headline text-2xl font-bold">Samsung R&amp;D Institute</h3>
-            <p class="mt-4 leading-relaxed text-on-surface-variant" data-pl="Automatyzacja testów automotive, praca z płytkami i diagnostyka problemów w środowiskach Linux/SoC." data-en="Automotive test automation, hands-on board work, and issue diagnostics in Linux/SoC environments.">Automatyzacja testów automotive, praca z płytkami i diagnostyka problemów w środowiskach Linux/SoC.</p>
-            <p class="mt-6 font-mono text-xs uppercase text-on-surface-variant">Python · Jenkins · Linux · Embedded</p>
+        <div class="experience-list">
+          <article class="experience-item">
+            <div><span class="meta" data-pl="od kwietnia 2026" data-en="since April 2026">od kwietnia 2026</span><h3>Samsung R&amp;D Institute</h3><p>Junior Automotive Software Engineer</p></div>
+            <div><p data-pl="Praca nad oprogramowaniem automotive w środowisku Linux/SoC, automatyzacją w Pythonie, zadaniami Jenkins i analizą problemów systemowych." data-en="Work on automotive software in Linux/SoC environments, Python automation, Jenkins jobs, and system issue analysis.">Praca nad oprogramowaniem automotive w środowisku Linux/SoC, automatyzacją w Pythonie, zadaniami Jenkins i analizą problemów systemowych.</p><div class="tags"><span class="tag">Python</span><span class="tag">Linux</span><span class="tag">SoC</span><span class="tag">Jenkins</span></div></div>
           </article>
-          <article class="home-evidence-item">
-            <p class="font-mono text-xs uppercase text-secondary">02 / PRODUCT</p>
-            <h3 class="mt-5 font-headline text-2xl font-bold">Fundacja Sorno</h3>
-            <p class="mt-4 leading-relaxed text-on-surface-variant" data-pl="System medyczny end-to-end: backend, portal, aplikacja mobilna, publikacja wyników, płatności i wdrożenie." data-en="An end-to-end medical system: backend, portal, mobile app, result publishing, payments, and deployment.">System medyczny end-to-end: backend, portal, aplikacja mobilna, publikacja wyników, płatności i wdrożenie.</p>
-            <p class="mt-6 font-mono text-xs uppercase text-on-surface-variant">FastAPI · Flutter · Firebase · GCP</p>
+          <article class="experience-item">
+            <div><span class="meta">2024-2026</span><h3>Fundacja Sorno</h3><p>Fullstack Developer</p></div>
+            <div><p data-pl="Rozwój systemu medycznego obejmującego backend, portal klienta, aplikację mobilną, publikację wyników i integracje danych." data-en="Development of a medical system covering the backend, client portal, mobile application, result publishing, and data integrations.">Rozwój systemu medycznego obejmującego backend, portal klienta, aplikację mobilną, publikację wyników i integracje danych.</p><div class="tags"><span class="tag">FastAPI</span><span class="tag">Flutter</span><span class="tag">Firebase</span><span class="tag">GCP</span></div></div>
           </article>
-          <article class="home-evidence-item">
-            <p class="font-mono text-xs uppercase text-tertiary">03 / QUALITY + DATA</p>
-            <h3 class="mt-5 font-headline text-2xl font-bold">Tikrow</h3>
-            <p class="mt-4 leading-relaxed text-on-surface-variant" data-pl="Testowanie API i logiki systemu połączone z analizą danych oraz modelami do wykrywania anomalii." data-en="API and system-logic testing combined with data analysis and models for anomaly detection.">Testowanie API i logiki systemu połączone z analizą danych oraz modelami do wykrywania anomalii.</p>
-            <p class="mt-6 font-mono text-xs uppercase text-on-surface-variant">Python · API · SQL · ML</p>
+          <article class="experience-item">
+            <div><span class="meta">2024-2026</span><h3>Tikrow</h3><p data-pl="QA Tester / analiza danych" data-en="QA Tester / data analysis">QA Tester / analiza danych</p></div>
+            <div><p data-pl="Testowanie API i logiki systemu połączone z analizą danych oraz wykorzystaniem modeli do wykrywania anomalii." data-en="API and system logic testing combined with data analysis and models used to detect anomalies.">Testowanie API i logiki systemu połączone z analizą danych oraz wykorzystaniem modeli do wykrywania anomalii.</p><div class="tags"><span class="tag">Python</span><span class="tag">API</span><span class="tag">SQL</span><span class="tag">ML</span></div></div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="px-8 py-24">
-      <div class="mx-auto max-w-7xl">
-        <div class="mb-12 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-          <div>
-            <p class="font-mono text-xs uppercase text-primary">SELECTED WORK / 01-03</p>
-            <h2 class="mt-4 font-headline text-4xl font-bold" data-pl="Trzy projekty inżynierskie" data-en="Three engineering projects">Trzy projekty inżynierskie</h2>
-            <p class="mt-3 max-w-3xl text-on-surface-variant" data-pl="Computer vision, system geoprzestrzenny i architektura multi-agentowa. Każdy projekt łączy kilka warstw technicznych w jeden działający przepływ." data-en="Computer vision, a geospatial system, and multi-agent architecture. Each project connects several technical layers into one working flow.">Computer vision, system geoprzestrzenny i architektura multi-agentowa. Każdy projekt łączy kilka warstw technicznych w jeden działający przepływ.</p>
-          </div>
-          <a class="inline-flex items-center gap-2 font-mono text-xs uppercase text-primary transition-colors hover:text-on-background" href="projects.html"><span data-pl="Wszystkie case studies" data-en="All case studies">Wszystkie case studies</span><span class="material-symbols-outlined text-base" aria-hidden="true">arrow_forward</span></a>
+    <section class="section" aria-labelledby="projects-heading">
+      <div class="page-shell">
+        <div class="section-header">
+          <div><p class="eyebrow" data-pl="Wybrane projekty" data-en="Selected projects">Wybrane projekty</p><h2 id="projects-heading" data-pl="Projekty techniczne" data-en="Technical projects">Projekty techniczne</h2></div>
+          <p data-pl="Każdy projekt ma osobną, czytelną sekcję z opisem problemu, rozwiązania i mojego zakresu pracy." data-en="Each project has a dedicated section describing the problem, solution, and my scope of work.">Każdy projekt ma osobną, czytelną sekcję z opisem problemu, rozwiązania i mojego zakresu pracy.</p>
         </div>
-        <div class="grid lg:grid-cols-3">
-          <article class="home-feature-card">
-            <div><p class="font-mono text-xs uppercase text-primary">01 / COMPUTER VISION</p><div class="home-feature-visual home-feature-visual--pose" aria-hidden="true"><span class="home-pose-head"></span><span class="home-pose-axis"></span><span class="home-pose-joint home-pose-joint--left"></span><span class="home-pose-joint home-pose-joint--right"></span></div><h3 class="font-headline text-3xl font-bold">AI Posture Analysis System</h3><p class="mt-4 text-sm leading-relaxed text-on-surface-variant" data-pl="Obraz RGB, głębia i detekcja punktów ciała w pipeline'ie analizy asymetrii postawy." data-en="RGB imagery, depth data, and body keypoint detection in a posture-asymmetry pipeline.">Obraz RGB, głębia i detekcja punktów ciała w pipeline'ie analizy asymetrii postawy.</p></div>
-            <a class="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-primary" href="projects.html#backscan"><span data-pl="Zobacz case study" data-en="View case study">Zobacz case study</span><span class="material-symbols-outlined text-base" aria-hidden="true">arrow_forward</span></a>
-          </article>
-          <article class="home-feature-card">
-            <div><p class="font-mono text-xs uppercase text-secondary">02 / GEOSPATIAL</p><div class="home-feature-visual home-feature-visual--map" aria-hidden="true"><span class="home-map-flood"></span><span class="home-map-route"></span><span class="home-map-point home-map-point--start"></span><span class="home-map-point home-map-point--end"></span></div><h3 class="font-headline text-3xl font-bold">Flood-aware evacuation routing</h3><p class="mt-4 text-sm leading-relaxed text-on-surface-variant" data-pl="Graf dróg OSM i dane Sentinel Hub użyte do omijania zalanych odcinków." data-en="An OSM road graph and Sentinel Hub data used to avoid flooded road segments.">Graf dróg OSM i dane Sentinel Hub użyte do omijania zalanych odcinków.</p></div>
-            <a class="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-primary" href="projects.html#flood-routing"><span data-pl="Zobacz case study" data-en="View case study">Zobacz case study</span><span class="material-symbols-outlined text-base" aria-hidden="true">arrow_forward</span></a>
-          </article>
-          <article class="home-feature-card">
-            <div><p class="font-mono text-xs uppercase text-tertiary">03 / AI SYSTEMS</p><div class="home-feature-visual home-feature-visual--agents" aria-hidden="true"><span class="home-agent home-agent--left">TECH</span><span class="home-agent home-agent--router">ROUTER</span><span class="home-agent home-agent--right">BILLING</span></div><h3 class="font-headline text-3xl font-bold">Dual-Agent Support System</h3><p class="mt-4 text-sm leading-relaxed text-on-surface-variant" data-pl="Router intencji i dwóch agentów wyspecjalizowanych w obsłudze technicznej i billingowej." data-en="An intent router and two agents specialized in technical and billing support.">Router intencji i dwóch agentów wyspecjalizowanych w obsłudze technicznej i billingowej.</p></div>
-            <a class="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-primary" href="projects.html#dual-agent"><span data-pl="Zobacz case study" data-en="View case study">Zobacz case study</span><span class="material-symbols-outlined text-base" aria-hidden="true">arrow_forward</span></a>
-          </article>
+        <div class="project-list">
+          <a class="project-row" href="projects.html#backscan"><span class="project-number">01</span><h3>AI Posture Analysis System</h3><p data-pl="Analiza postawy z wykorzystaniem obrazu RGB, danych głębi i detekcji punktów ciała." data-en="Posture analysis using RGB imagery, depth data, and body keypoint detection.">Analiza postawy z wykorzystaniem obrazu RGB, danych głębi i detekcji punktów ciała.</p><span class="project-link-label" data-pl="Zobacz projekt →" data-en="View project →">Zobacz projekt →</span></a>
+          <a class="project-row" href="projects.html#flood-routing"><span class="project-number">02</span><h3>Flood-aware evacuation routing</h3><p data-pl="Wyznaczanie tras ewakuacyjnych z uwzględnieniem obszarów zalanych." data-en="Evacuation route planning that accounts for flooded areas.">Wyznaczanie tras ewakuacyjnych z uwzględnieniem obszarów zalanych.</p><span class="project-link-label" data-pl="Zobacz projekt →" data-en="View project →">Zobacz projekt →</span></a>
+          <a class="project-row" href="projects.html#dual-agent"><span class="project-number">03</span><h3>Dual-Agent Support System</h3><p data-pl="System wsparcia z routerem intencji i dwoma wyspecjalizowanymi agentami." data-en="A support system with an intent router and two specialized agents.">System wsparcia z routerem intencji i dwoma wyspecjalizowanymi agentami.</p><span class="project-link-label" data-pl="Zobacz projekt →" data-en="View project →">Zobacz projekt →</span></a>
         </div>
+        <div class="button-row"><a class="button button--secondary" href="projects.html"><span data-pl="Wszystkie projekty i doświadczenie" data-en="All projects and experience">Wszystkie projekty i doświadczenie</span><span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a></div>
       </div>
     </section>
 
-    <section class="bg-surface-container-low px-8 py-24">
-      <div class="mx-auto grid max-w-7xl gap-8 border-t border-white/10 pt-14 lg:grid-cols-[1fr_auto] lg:items-end">
-        <div>
-          <p class="font-mono text-xs uppercase text-primary" data-pl="POROZMAWIAJMY" data-en="LET'S TALK">POROZMAWIAJMY</p>
-          <h2 class="mt-4 max-w-4xl font-headline text-4xl font-bold leading-tight md:text-5xl" data-pl="Szukasz osoby, która rozumie zarówno kod, jak i zachowanie całego systemu?" data-en="Looking for someone who understands both the code and the behavior of the whole system?">Szukasz osoby, która rozumie zarówno kod, jak i zachowanie całego systemu?</h2>
-          <p class="mt-5 max-w-3xl text-lg leading-relaxed text-on-surface-variant" data-pl="Chętnie porozmawiam o rolach i projektach związanych z Linuxem, embedded, Pythonem, backendem oraz inżynierią wydajności." data-en="I am open to discussing roles and projects involving Linux, embedded systems, Python, backend development, and performance engineering.">Chętnie porozmawiam o rolach i projektach związanych z Linuxem, embedded, Pythonem, backendem oraz inżynierią wydajności.</p>
-        </div>
-        <a class="primary-action" href="contact.html"><span data-pl="Napisz do mnie" data-en="Contact me">Napisz do mnie</span><span class="material-symbols-outlined text-base" aria-hidden="true">arrow_forward</span></a>
+    <section class="section--muted">
+      <div class="page-shell cta-row">
+        <div><p class="eyebrow" data-pl="Kontakt" data-en="Contact">Kontakt</p><h2 data-pl="Porozmawiajmy o roli lub projekcie wymagającym solidnego zaplecza technicznego." data-en="Let's discuss a role or project that requires solid technical foundations.">Porozmawiajmy o roli lub projekcie wymagającym solidnego zaplecza technicznego.</h2></div>
+        <a class="button" href="contact.html"><span data-pl="Napisz do mnie" data-en="Contact me">Napisz do mnie</span><span class="material-symbols-outlined" aria-hidden="true">mail</span></a>
       </div>
     </section>
-
   </main>
 
-  <footer class="w-full border-t border-[#1b2028] bg-[#0a0e14] py-12">
-    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-8 md:flex-row">
-      <div class="font-['Inter'] text-sm uppercase tracking-widest text-[#f1f3fc]/50" data-pl="Copyright 2026 Adam Sapiecha" data-en="Copyright 2026 Adam Sapiecha">Copyright 2026 Adam Sapiecha</div>
-      <div class="flex gap-8">
-        <a class="font-['Inter'] text-sm uppercase tracking-widest text-[#f1f3fc]/50 opacity-80 transition-colors hover:text-[#00FF9C] hover:opacity-100" href="https://github.com/Adam-Sapiecha" target="_blank" rel="noreferrer">GitHub</a>
-        <a class="font-['Inter'] text-sm uppercase tracking-widest text-[#f1f3fc]/50 opacity-80 transition-colors hover:text-[#00FF9C] hover:opacity-100" href="https://www.linkedin.com/in/adam-sapiecha-686057314/" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a class="font-['Inter'] text-sm uppercase tracking-widest text-[#f1f3fc]/50 opacity-80 transition-colors hover:text-[#00FF9C] hover:opacity-100" href="assets/Adam_Sapiecha_CV.pdf" data-href-pl="assets/Adam_Sapiecha_CV.pdf" data-href-en="assets/Adam_Sapiecha_CV.pdf" download="Adam_Sapiecha_CV.pdf" data-download-pl="Adam_Sapiecha_CV.pdf" data-download-en="Adam_Sapiecha_CV.pdf" target="_blank" rel="noreferrer">CV</a>
-      </div>
+  <footer class="site-footer">
+    <div class="page-shell footer-inner">
+      <p>© 2026 Adam Sapiecha</p>
+      <div class="footer-links"><a href="https://github.com/Adam-Sapiecha" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/adam-sapiecha-686057314/" target="_blank" rel="noreferrer">LinkedIn</a><a href="assets/Adam_Sapiecha_CV.pdf" download="Adam_Sapiecha_CV.pdf" target="_blank" rel="noreferrer">CV</a></div>
     </div>
   </footer>
 
