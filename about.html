@@ -31,20 +31,22 @@
       <a class="nav-brand" href="index.html" aria-label="Adam Sapiecha">Adam Sapiecha</a>
       <div class="desktop-nav">
         <a data-nav="home" href="index.html" data-pl="Główna" data-en="Home">Główna</a>
-        <a data-nav="projects" href="projects.html" data-pl="Projekty" data-en="Projects">Projekty</a>
+        <a data-nav="projects" href="projects.html" data-pl="Projekty i praca" data-en="Projects and work">Projekty i praca</a>
         <a data-nav="about" href="about.html" data-pl="O mnie" data-en="About">O mnie</a>
         <a data-nav="contact" href="contact.html" data-pl="Kontakt" data-en="Contact">Kontakt</a>
       </div>
       <div class="nav-actions">
-        <button class="lang-btn" data-lang="pl" type="button">PL</button>
-        <button class="lang-btn" data-lang="en" type="button">EN</button>
+        <a class="nav-social" href="https://github.com/Adam-Sapiecha" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7A11.5 11.5 0 0 0 8.4 23c.6.1.8-.2.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C15.1 5 16 5.3 16 5.3c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .4.2.7.8.6A11.5 11.5 0 0 0 12 .7Z" /></svg></a>
+        <a class="nav-social" href="https://www.linkedin.com/in/adam-sapiecha-686057314/" target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45C23.2 24 24 23.23 24 22.27V1.73C24 .77 23.2 0 22.22 0Z" /></svg></a>
+        <button class="lang-btn is-selected" data-lang="pl" type="button" aria-pressed="true">PL</button>
+        <button class="lang-btn" data-lang="en" type="button" aria-pressed="false">EN</button>
         <button class="menu-toggle material-symbols-outlined" data-menu-toggle type="button" aria-controls="mobile-navigation" aria-expanded="false" aria-label="Otwórz menu" data-label-open-pl="Otwórz menu" data-label-open-en="Open menu" data-label-close-pl="Zamknij menu" data-label-close-en="Close menu">menu</button>
       </div>
     </nav>
     <div id="mobile-navigation" class="mobile-nav-panel hidden" data-mobile-nav>
       <div class="mobile-nav-links">
         <a data-nav="home" href="index.html" data-pl="Główna" data-en="Home">Główna</a>
-        <a data-nav="projects" href="projects.html" data-pl="Projekty" data-en="Projects">Projekty</a>
+        <a data-nav="projects" href="projects.html" data-pl="Projekty i praca" data-en="Projects and work">Projekty i praca</a>
         <a data-nav="about" href="about.html" data-pl="O mnie" data-en="About">O mnie</a>
         <a data-nav="contact" href="contact.html" data-pl="Kontakt" data-en="Contact">Kontakt</a>
       </div>
@@ -54,9 +56,8 @@
   <main id="main-content">
     <section class="section">
       <div class="page-shell">
-        <div class="about-intro">
+        <div class="about-intro about-intro--single">
           <div><p class="eyebrow" data-pl="O mnie" data-en="About">O mnie</p><h1 data-pl="Po pracy jestem najczęściej w ruchu." data-en="Outside work, I am usually on the move.">Po pracy jestem najczęściej w ruchu.</h1></div>
-          <p class="lead" data-pl="Wybieram aktywności, które mają praktyczny wymiar, wymagają koncentracji i pozwalają spędzać czas z dala od komputera." data-en="I choose hands-on activities that require focus and let me spend time away from a computer.">Wybieram aktywności, które mają praktyczny wymiar, wymagają koncentracji i pozwalają spędzać czas z dala od komputera.</p>
         </div>
 
         <div class="photo-grid" aria-label="Zdjęcia z gór, żeglowania i podróży" data-aria-label-pl="Zdjęcia z gór, żeglowania i podróży" data-aria-label-en="Photos from mountains, sailing, and travel">
@@ -73,22 +74,21 @@
       <div class="page-shell">
         <div class="section-header section-header--single"><div><h2 id="activities-heading" data-pl="Aktywności i uprawnienia" data-en="Activities and qualifications">Aktywności i uprawnienia</h2></div></div>
         <div class="activity-list">
-          <article class="activity-item"><span class="activity-icon material-symbols-outlined" aria-hidden="true">fire_truck</span><div><h3 data-pl="Straż pożarna" data-en="Firefighting">Straż pożarna</h3><p data-pl="Pełnię funkcję strażaka. Liczą się tu praktyczne przygotowanie, opanowanie i sprawna współpraca z zespołem." data-en="I serve as a firefighter. It requires practical preparation, composure, and effective teamwork.">Pełnię funkcję strażaka. Liczą się tu praktyczne przygotowanie, opanowanie i sprawna współpraca z zespołem.</p></div></article>
-          <article class="activity-item"><span class="activity-icon material-symbols-outlined" aria-hidden="true">pets</span><div><h3 data-pl="Jazda konna" data-en="Horse riding">Jazda konna</h3><p data-pl="Pracuję nad techniką i komunikacją z koniem. Cenię połączenie ruchu, koncentracji i zaufania." data-en="I work on my technique and communication with the horse. I value the combination of movement, focus, and trust.">Pracuję nad techniką i komunikacją z koniem. Cenię połączenie ruchu, koncentracji i zaufania.</p></div></article>
-          <article class="activity-item"><span class="activity-icon material-symbols-outlined" aria-hidden="true">flight</span><div><h3 data-pl="Szybownictwo" data-en="Gliding">Szybownictwo</h3><p data-pl="Najbardziej interesuje mnie praktyczna strona lotnictwa: przygotowanie, obserwacja warunków i precyzyjne działanie." data-en="I am most interested in the practical side of aviation: preparation, reading conditions, and precise action.">Najbardziej interesuje mnie praktyczna strona lotnictwa: przygotowanie, obserwacja warunków i precyzyjne działanie.</p></div></article>
-          <article class="activity-item"><span class="activity-icon material-symbols-outlined" aria-hidden="true">sailing</span><div><h3 data-pl="Żeglarstwo" data-en="Sailing">Żeglarstwo</h3><p data-pl="Mam uprawnienia sternika morskiego. Prowadzenie jachtu łączy pracę z załogą z odpowiedzialnością za przebieg rejsu." data-en="I hold a yacht skipper qualification. Handling a yacht combines teamwork with responsibility for the voyage.">Mam uprawnienia sternika morskiego. Prowadzenie jachtu łączy pracę z załogą z odpowiedzialnością za przebieg rejsu.</p></div></article>
-          <article class="activity-item"><span class="activity-icon material-symbols-outlined" aria-hidden="true">chess</span><div><h3 data-pl="Szachy" data-en="Chess">Szachy</h3><p data-pl="Najbardziej wciąga mnie analiza pozycji i szukanie najlepszego rozwiązania przy niepełnej informacji." data-en="I am most drawn to position analysis and finding the best solution with incomplete information.">Najbardziej wciąga mnie analiza pozycji i szukanie najlepszego rozwiązania przy niepełnej informacji.</p></div></article>
-          <article class="activity-item"><span class="activity-icon material-symbols-outlined" aria-hidden="true">landscape</span><div><h3 data-pl="Sport i góry" data-en="Sports and mountains">Sport i góry</h3><p data-pl="To mój sposób na aktywny odpoczynek, regularny wysiłek i oderwanie się od pracy przy komputerze." data-en="They are my way to rest actively, exercise regularly, and step away from computer-based work.">To mój sposób na aktywny odpoczynek, regularny wysiłek i oderwanie się od pracy przy komputerze.</p></div></article>
-          <article class="activity-item"><span class="activity-icon material-symbols-outlined" aria-hidden="true">route</span><div><h3 data-pl="Podróże autostopem" data-en="Hitchhiking">Podróże autostopem</h3><p data-pl="W ten sposób poznaję miejsca z innej perspektywy i spotykam ludzi, których nie poznałbym podczas typowego wyjazdu." data-en="This lets me see places from a different perspective and meet people I would not encounter on a typical trip.">W ten sposób poznaję miejsca z innej perspektywy i spotykam ludzi, których nie poznałbym podczas typowego wyjazdu.</p></div></article>
+          <article class="activity-item"><span class="activity-icon material-symbols-outlined" aria-hidden="true">fire_truck</span><div><h3 data-pl="Straż pożarna" data-en="Firefighting">Straż pożarna</h3><p data-pl="Pełnię funkcję strażaka. Ta rola wymaga przygotowania, opanowania i współpracy zespołu." data-en="I serve as a firefighter. The role requires preparation, composure, and teamwork.">Pełnię funkcję strażaka. Ta rola wymaga przygotowania, opanowania i współpracy zespołu.</p></div></article>
+          <article class="activity-item"><span class="activity-icon material-symbols-outlined" aria-hidden="true">pets</span><div><h3 data-pl="Jazda konna" data-en="Horse riding">Jazda konna</h3><p data-pl="Jeżdżę konno i pracuję nad techniką jazdy oraz komunikacją z koniem." data-en="I ride horses and work on my riding technique and communication with the horse.">Jeżdżę konno i pracuję nad techniką jazdy oraz komunikacją z koniem.</p></div></article>
+          <article class="activity-item"><span class="activity-icon material-symbols-outlined" aria-hidden="true">flight</span><div><h3 data-pl="Szybownictwo" data-en="Gliding">Szybownictwo</h3><p data-pl="Latam na szybowcach; przygotowanie do lotu obejmuje ocenę warunków i precyzyjne działanie." data-en="I fly gliders; flight preparation includes assessing conditions and acting precisely.">Latam na szybowcach; przygotowanie do lotu obejmuje ocenę warunków i precyzyjne działanie.</p></div></article>
+          <article class="activity-item"><span class="activity-icon material-symbols-outlined" aria-hidden="true">sailing</span><div><h3 data-pl="Żeglarstwo" data-en="Sailing">Żeglarstwo</h3><p data-pl="Mam uprawnienia sternika morskiego i prowadzę jachty, odpowiadając za przebieg rejsu oraz pracę załogi." data-en="I am a qualified yacht skipper and handle yachts, taking responsibility for the voyage and crew coordination.">Mam uprawnienia sternika morskiego i prowadzę jachty, odpowiadając za przebieg rejsu oraz pracę załogi.</p></div></article>
+          <article class="activity-item"><span class="activity-icon material-symbols-outlined" aria-hidden="true">chess</span><div><h3 data-pl="Szachy" data-en="Chess">Szachy</h3><p data-pl="Gram w szachy i analizuję pozycje oraz decyzje podejmowane podczas partii." data-en="I play chess and analyze positions and decisions made during a game.">Gram w szachy i analizuję pozycje oraz decyzje podejmowane podczas partii.</p></div></article>
+          <article class="activity-item"><span class="activity-icon material-symbols-outlined" aria-hidden="true">landscape</span><div><h3 data-pl="Sport i góry" data-en="Sports and mountains">Sport i góry</h3><p data-pl="Regularnie uprawiam sport i jeżdżę w góry." data-en="I exercise regularly and spend time in the mountains.">Regularnie uprawiam sport i jeżdżę w góry.</p></div></article>
+          <article class="activity-item"><span class="activity-icon material-symbols-outlined" aria-hidden="true">route</span><div><h3 data-pl="Podróże autostopem" data-en="Hitchhiking">Podróże autostopem</h3><p data-pl="Podróżuję autostopem, poznając po drodze nowe miejsca i ludzi." data-en="I hitchhike, meeting new people and discovering places along the way.">Podróżuję autostopem, poznając po drodze nowe miejsca i ludzi.</p></div></article>
         </div>
       </div>
     </section>
 
-    <section><div class="page-shell cta-row"><div><h2 data-pl="Zobacz moje projekty i doświadczenie zawodowe." data-en="See my projects and professional experience.">Zobacz moje projekty i doświadczenie zawodowe.</h2></div><a class="button" href="projects.html"><span data-pl="Przejdź do projektów" data-en="View projects">Przejdź do projektów</span><span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a></div></section>
   </main>
 
   <footer class="site-footer">
-    <div class="page-shell footer-inner"><p>© 2026 Adam Sapiecha</p><div class="footer-links"><a href="https://github.com/Adam-Sapiecha" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/adam-sapiecha-686057314/" target="_blank" rel="noreferrer">LinkedIn</a><a href="assets/Adam_Sapiecha_CV.pdf" download="Adam_Sapiecha_CV.pdf" target="_blank" rel="noreferrer">CV</a></div></div>
+    <div class="page-shell footer-inner"><p>© 2026 Adam Sapiecha</p></div>
   </footer>
 
   <script src="script.js"></script>
