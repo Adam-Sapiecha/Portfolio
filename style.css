@@ -446,6 +446,43 @@ p:last-child {
   margin-top: 8px;
 }
 
+.learning-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+  gap: 64px;
+  border-top: 1px solid var(--line-strong);
+}
+
+.education-entry,
+.course-list {
+  padding-top: 30px;
+}
+
+.education-entry h3 {
+  max-width: 500px;
+  margin-top: 9px;
+  font-size: 1.35rem;
+}
+
+.education-entry p,
+.course-item p {
+  margin: 8px 0 0;
+  color: var(--muted);
+}
+
+.course-item {
+  padding: 0 0 22px;
+}
+
+.course-item + .course-item {
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+
+.course-item h3 {
+  font-size: 1.05rem;
+}
+
 .stack-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -512,7 +549,7 @@ p:last-child {
   scroll-margin-top: 96px;
   border: 1px solid var(--line-strong);
   border-radius: var(--radius);
-  padding: clamp(34px, 5vw, 60px);
+  overflow: hidden;
   background: var(--surface);
   box-shadow: 0 4px 14px rgba(24, 33, 42, 0.06);
 }
@@ -521,50 +558,81 @@ p:last-child {
   margin-top: 32px;
 }
 
-.project-detail-header {
+.project-toggle {
   display: grid;
-  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
-  gap: 68px;
-  align-items: start;
+  grid-template-columns: minmax(0, 1fr) 42px;
+  gap: 24px;
+  align-items: center;
+  padding: 34px 38px;
+  list-style: none;
+  cursor: pointer;
 }
 
-.project-detail-header h2 {
-  margin-top: 12px;
+.project-toggle::-webkit-details-marker {
+  display: none;
+}
+
+.project-toggle:hover {
+  background: var(--surface-muted);
+}
+
+.project-toggle-copy {
+  display: grid;
+  gap: 10px;
+}
+
+.project-title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.18;
 }
 
 .project-summary {
-  margin-bottom: 0;
+  display: block;
+  max-width: 880px;
   color: var(--muted);
-  font-size: 1.15rem;
+  font-size: 1rem;
 }
 
-.project-facts {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin-top: 48px;
+.project-chevron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: var(--accent-dark);
+  transition: transform 160ms ease;
+}
+
+.project-detail[open] .project-chevron {
+  transform: rotate(180deg);
+}
+
+.project-detail-body {
+  padding: 0 38px 34px;
   border-top: 1px solid var(--line);
+}
+
+.project-story {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 36px;
+}
+
+.project-story section {
+  padding: 28px 0;
   border-bottom: 1px solid var(--line);
 }
 
-.project-fact {
-  padding: 26px 28px;
-  border-left: 1px solid var(--line);
+.project-story h3 {
+  margin-bottom: 10px;
+  font-size: 0.92rem;
 }
 
-.project-fact:first-child {
-  padding-left: 0;
-  border-left: 0;
-}
-
-.project-fact h3 {
-  margin-bottom: 12px;
-  font-size: 0.95rem;
-}
-
-.project-fact p {
-  margin-bottom: 0;
+.project-story p {
+  margin: 0;
   color: var(--muted);
-  font-size: 0.94rem;
+  font-size: 0.95rem;
 }
 
 .project-actions {
@@ -607,8 +675,14 @@ p:last-child {
   color: var(--muted);
 }
 
-.work-card-grid,
-.training-grid {
+.work-role-description {
+  max-width: 900px;
+  margin: 22px 0 0;
+  color: var(--muted);
+  font-size: 1.02rem;
+}
+
+.work-card-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
@@ -619,8 +693,7 @@ p:last-child {
   grid-template-columns: minmax(0, 760px);
 }
 
-.work-card,
-.training-item {
+.work-card {
   min-width: 0;
   border: 1px solid var(--line);
   border-radius: 4px;
@@ -641,19 +714,10 @@ p:last-child {
   margin-top: 16px;
 }
 
-.work-card p,
-.training-item p {
+.work-card p {
   margin: 10px 0 0;
   color: var(--muted);
   font-size: 0.92rem;
-}
-
-.training-grid {
-  margin-top: 0;
-}
-
-.training-item h3 {
-  font-size: 1.05rem;
 }
 
 .about-intro {
@@ -712,6 +776,7 @@ p:last-child {
   display: grid;
   grid-template-columns: 42px minmax(0, 1fr);
   gap: 18px;
+  align-items: start;
   padding: 28px 28px 28px 0;
   border-bottom: 1px solid var(--line);
 }
@@ -820,14 +885,12 @@ a.contact-item:hover .contact-value {
   }
 
   .section-header,
-  .project-detail-header,
   .about-intro {
     grid-template-columns: 1fr;
     gap: 24px;
   }
 
-  .work-card-grid,
-  .training-grid {
+  .work-card-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -865,19 +928,17 @@ a.contact-item:hover .contact-value {
     gap: 28px;
   }
 
-  .project-facts {
+  .learning-layout,
+  .project-story {
     grid-template-columns: 1fr;
   }
 
-  .project-fact,
-  .project-fact:first-child {
-    padding: 22px 0;
-    border-left: 0;
-    border-bottom: 1px solid var(--line);
+  .learning-layout {
+    gap: 34px;
   }
 
-  .project-fact:last-child {
-    border-bottom: 0;
+  .course-list {
+    padding-top: 0;
   }
 
   .photo-grid {
@@ -947,10 +1008,6 @@ a.contact-item:hover .contact-value {
     margin-bottom: 14px;
   }
 
-  .project-summary {
-    font-size: 1.04rem;
-  }
-
   .hero {
     gap: 42px;
     padding: 52px 0 58px;
@@ -983,12 +1040,22 @@ a.contact-item:hover .contact-value {
     padding: 28px 0;
   }
 
-  .project-detail {
-    padding: 28px 22px;
+  .project-toggle {
+    grid-template-columns: minmax(0, 1fr) 36px;
+    gap: 12px;
+    padding: 24px 20px;
   }
 
-  .project-facts {
-    margin-top: 34px;
+  .project-title {
+    font-size: 1.45rem;
+  }
+
+  .project-summary {
+    font-size: 0.95rem;
+  }
+
+  .project-detail-body {
+    padding: 0 20px 24px;
   }
 
   .work-role-header {
@@ -1000,8 +1067,7 @@ a.contact-item:hover .contact-value {
     margin-top: 12px;
   }
 
-  .work-card-grid,
-  .training-grid {
+  .work-card-grid {
     grid-template-columns: 1fr;
   }
 
