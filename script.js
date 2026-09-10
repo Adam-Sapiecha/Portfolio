@@ -1,5 +1,5 @@
 (() => {
-  const STORAGE_KEY = "portfolio-language";
+  const STORAGE_KEY = "portfolio-language-v2";
   const body = document.body;
   const languageButtons = Array.from(document.querySelectorAll(".lang-btn"));
   const menuToggle = document.querySelector("[data-menu-toggle]");
@@ -27,7 +27,7 @@
   }
 
   function getInitialLanguage() {
-    return getStoredLanguage() === "en" ? "en" : "pl";
+    return getStoredLanguage() === "pl" ? "pl" : "en";
   }
 
   function getDatasetValue(element, lang, prefix = "") {
