@@ -37,7 +37,7 @@ Repozytorium ma kilka wariantów prowadzonych na osobnych branchach:
 ├── style.css
 ├── script.js
 ├── assets/
-│   ├── Adam Sapiecha (1).jpg
+│   ├── Portret.png
 │   ├── Adam_Sapiecha_CV.pdf
 │   ├── Autostop1.jpeg
 │   ├── Autostop2.jpg
