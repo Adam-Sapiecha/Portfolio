@@ -2,26 +2,26 @@
 
 Statyczna strona portfolio/CV Adama Sapiechy. Projekt prezentuje profil IT, doświadczenie, projekty, zainteresowania oraz dane kontaktowe w dwóch wersjach językowych: PL i EN.
 
-Repozytorium ma dwa warianty prowadzone na osobnych branchach:
+Repozytorium ma kilka wariantów prowadzonych na osobnych branchach:
 
 - `main` - wersja ogólna,
-- `hpc` - wersja sprofilowana pod C++, Linux, performance engineering, GPU i HPC.
+- `hpc` - wersja sprofilowana pod C++, Linux, performance engineering, GPU i HPC,
+- `WersjaPlain` - minimalistyczna, neutralna wersja nastawiona na maksymalną czytelność.
 
 ## Technologie
 
 - HTML5
 - CSS3
 - JavaScript
-- Tailwind CSS przez CDN
 - Google Fonts
 - Material Symbols
 
 ## Najważniejsze funkcje
 
-- ciemny interfejs z zielonymi akcentami,
+- jasny, neutralny interfejs z jednym stonowanym akcentem,
 - przełączanie języka PL/EN zapisywane w `localStorage`,
 - responsywna nawigacja z menu mobilnym,
-- karty projektów rozwijane po kliknięciu,
+- projekty ułożone liniowo z bezpośrednimi odnośnikami do szczegółów,
 - metadane SEO, Open Graph, Twitter Card i dane strukturalne,
 - poprawione focus states oraz obsługa `prefers-reduced-motion`.
 
@@ -35,10 +35,9 @@ Repozytorium ma dwa warianty prowadzone na osobnych branchach:
 ├── contact.html
 ├── favicon.svg
 ├── style.css
-├── projects.css
 ├── script.js
 ├── assets/
-│   ├── Adam Sapiecha (1).jpg
+│   ├── Portret.png
 │   ├── Adam_Sapiecha_CV.pdf
 │   ├── Autostop1.jpeg
 │   ├── Autostop2.jpg

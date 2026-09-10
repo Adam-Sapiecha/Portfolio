@@ -1,338 +1,218 @@
 <!DOCTYPE html>
-<html class="dark" lang="pl">
+<html lang="pl">
 <head>
   <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Adam Sapiecha - Projekty inżynierskie</title>
-  <meta name="description" content="Wybrane projekty Adama Sapiechy: computer vision, routing geoprzestrzenny, systemy AI oraz doświadczenie w Linuxie, embedded i SoC." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projekty i praca - Adam Sapiecha</title>
+  <meta name="description" content="Projekty techniczne i obszary pracy Adama Sapiechy: automotive, embedded Linux, backend, QA, dane i AI." />
   <link rel="canonical" href="https://adam-sapiecha.github.io/Portfolio-AdamSapiecha/projects.html" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <meta property="og:type" content="profile" />
+  <meta property="og:type" content="website" />
   <meta property="og:locale" content="pl_PL" />
-  <meta property="og:title" content="Adam Sapiecha - Projekty inżynierskie" />
-  <meta property="og:description" content="Wybrane projekty Adama Sapiechy: computer vision, routing geoprzestrzenny, systemy AI oraz doświadczenie w Linuxie, embedded i SoC." />
+  <meta property="og:title" content="Projekty i praca - Adam Sapiecha" />
+  <meta property="og:description" content="Projekty techniczne i obszary pracy Adama Sapiechy." />
   <meta property="og:url" content="https://adam-sapiecha.github.io/Portfolio-AdamSapiecha/projects.html" />
-  <meta property="og:image" content="https://adam-sapiecha.github.io/Portfolio-AdamSapiecha/assets/Adam%20Sapiecha%20(1).jpg" />
+  <meta property="og:image" content="https://adam-sapiecha.github.io/Portfolio-AdamSapiecha/assets/Portret.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Adam Sapiecha - Projekty inżynierskie" />
-  <meta name="twitter:description" content="Wybrane projekty Adama Sapiechy: computer vision, routing geoprzestrzenny, systemy AI oraz doświadczenie w Linuxie, embedded i SoC." />
-  <meta name="twitter:image" content="https://adam-sapiecha.github.io/Portfolio-AdamSapiecha/assets/Adam%20Sapiecha%20(1).jpg" />
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet" />
+  <meta name="twitter:title" content="Projekty i praca - Adam Sapiecha" />
+  <meta name="twitter:description" content="Projekty techniczne i obszary pracy Adama Sapiechy." />
+  <meta name="twitter:image" content="https://adam-sapiecha.github.io/Portfolio-AdamSapiecha/assets/Portret.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="projects.css" />
-  <script id="tailwind-config">
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            "surface-container-low": "#0f141a", "on-background": "#f1f3fc",
-            "primary-container": "#00fc9a", "surface": "#0a0e14",
-            "surface-container": "#151a21", "secondary": "#00cffc",
-            "outline-variant": "#44484f", "surface-container-high": "#1b2028",
-            "surface-container-highest": "#20262f", "on-surface-variant": "#a8abb3",
-            "tertiary": "#ac89ff", "primary": "#a1ffc2", "on-primary": "#00643a"
-          },
-          fontFamily: { "headline": ["Space Grotesk"], "body": ["Inter"], "label": ["Space Grotesk"] }
-        }
-      }
-    };
-  </script>
-  <style>.material-symbols-outlined { font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24; }</style>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfilePage",
-      "url": "https://adam-sapiecha.github.io/Portfolio-AdamSapiecha/projects.html",
-      "mainEntity": {
-        "@type": "Person",
-        "name": "Adam Sapiecha",
-        "url": "https://adam-sapiecha.github.io/Portfolio-AdamSapiecha/",
-        "sameAs": ["https://github.com/Adam-Sapiecha", "https://www.linkedin.com/in/adam-sapiecha-686057314/"],
-        "knowsAbout": ["C++", "Python", "Linux", "Embedded Linux", "SoC", "Computer Vision", "Geospatial Systems", "Artificial Intelligence"]
-      }
-    }
-  </script>
 </head>
-<body class="bg-surface text-on-background font-body" data-page="projects" data-title-pl="Adam Sapiecha - Projekty inżynierskie" data-title-en="Adam Sapiecha - Engineering projects" data-description-pl="Wybrane projekty Adama Sapiechy: computer vision, routing geoprzestrzenny, systemy AI oraz doświadczenie w Linuxie, embedded i SoC." data-description-en="Selected projects by Adam Sapiecha: computer vision, geospatial routing, AI systems, and professional work with Linux, embedded systems, and SoC platforms.">
+<body data-page="projects" data-title-pl="Projekty i praca - Adam Sapiecha" data-title-en="Projects and work - Adam Sapiecha" data-description-pl="Projekty techniczne i obszary pracy Adama Sapiechy: automotive, embedded Linux, backend, QA, dane i AI." data-description-en="Adam Sapiecha's technical projects and work areas: automotive, embedded Linux, backend, QA, data, and AI.">
   <a class="skip-link" href="#main-content" data-pl="Przejdź do treści" data-en="Skip to content">Przejdź do treści</a>
-  <nav class="site-nav fixed top-0 z-50 w-full bg-[#0a0e14]/80 backdrop-blur-xl shadow-[0_0_20px_rgba(0,255,156,0.1)]" aria-label="Główna nawigacja" data-aria-label-pl="Główna nawigacja" data-aria-label-en="Main navigation">
-    <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-8">
-      <a class="nav-brand font-['Space_Grotesk'] text-xl font-bold text-[#00FF9C]" href="index.html" aria-label="Adam Sapiecha">Adam Sapiecha</a>
-      <div class="desktop-nav hidden items-center gap-6 font-['Space_Grotesk'] lg:flex">
-        <a data-nav="home" class="transition-colors duration-200 hover:text-[#00FF9C]" href="index.html" data-pl="Główna" data-en="Home">Główna</a>
-        <a data-nav="projects" class="transition-colors duration-200 hover:text-[#00FF9C]" href="projects.html" data-pl="Projekty i praca" data-en="Projects and work">Projekty i praca</a>
-        <a data-nav="about" class="transition-colors duration-200 hover:text-[#00FF9C]" href="about.html" data-pl="O mnie" data-en="About me">O mnie</a>
-        <a data-nav="contact" class="transition-colors duration-200 hover:text-[#00FF9C]" href="contact.html" data-pl="Kontakt" data-en="Contact">Kontakt</a>
-      </div>
-      <div class="nav-actions flex items-center gap-3">
-        <button class="lang-btn border border-outline-variant px-3 py-2 text-xs uppercase text-on-surface-variant" data-lang="pl" type="button">PL</button>
-        <button class="lang-btn border border-outline-variant px-3 py-2 text-xs uppercase text-on-surface-variant" data-lang="en" type="button">EN</button>
-        <button class="menu-toggle material-symbols-outlined text-primary lg:hidden" data-menu-toggle type="button" aria-controls="mobile-navigation" aria-expanded="false" aria-label="Otwórz menu" data-label-open-pl="Otwórz menu" data-label-open-en="Open menu" data-label-close-pl="Zamknij menu" data-label-close-en="Close menu">menu</button>
-      </div>
-    </div>
-    <div id="mobile-navigation" class="hidden border-t border-outline-variant/30 bg-surface-container-low px-8 py-4 lg:hidden" data-mobile-nav>
-      <div class="flex flex-col gap-4 font-['Space_Grotesk']">
+
+  <header class="site-header">
+    <nav class="nav-inner" aria-label="Główna nawigacja" data-aria-label-pl="Główna nawigacja" data-aria-label-en="Main navigation">
+      <a class="nav-brand" href="index.html" aria-label="Adam Sapiecha">Adam Sapiecha</a>
+      <div class="desktop-nav">
         <a data-nav="home" href="index.html" data-pl="Główna" data-en="Home">Główna</a>
         <a data-nav="projects" href="projects.html" data-pl="Projekty i praca" data-en="Projects and work">Projekty i praca</a>
-        <a data-nav="about" href="about.html" data-pl="O mnie" data-en="About me">O mnie</a>
+        <a data-nav="about" href="about.html" data-pl="O mnie" data-en="About">O mnie</a>
+        <a data-nav="contact" href="contact.html" data-pl="Kontakt" data-en="Contact">Kontakt</a>
+      </div>
+      <div class="nav-actions">
+        <a class="nav-social" href="https://github.com/Adam-Sapiecha" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7A11.5 11.5 0 0 0 8.4 23c.6.1.8-.2.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C15.1 5 16 5.3 16 5.3c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .4.2.7.8.6A11.5 11.5 0 0 0 12 .7Z" /></svg></a>
+        <a class="nav-social" href="https://www.linkedin.com/in/adam-sapiecha-686057314/" target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45C23.2 24 24 23.23 24 22.27V1.73C24 .77 23.2 0 22.22 0Z" /></svg></a>
+        <button class="lang-btn is-selected" data-lang="pl" type="button" aria-pressed="true">PL</button>
+        <button class="lang-btn" data-lang="en" type="button" aria-pressed="false">EN</button>
+        <button class="menu-toggle material-symbols-outlined" data-menu-toggle type="button" aria-controls="mobile-navigation" aria-expanded="false" aria-label="Otwórz menu" data-label-open-pl="Otwórz menu" data-label-open-en="Open menu" data-label-close-pl="Zamknij menu" data-label-close-en="Close menu">menu</button>
+      </div>
+    </nav>
+    <div id="mobile-navigation" class="mobile-nav-panel hidden" data-mobile-nav>
+      <div class="mobile-nav-links">
+        <a data-nav="home" href="index.html" data-pl="Główna" data-en="Home">Główna</a>
+        <a data-nav="projects" href="projects.html" data-pl="Projekty i praca" data-en="Projects and work">Projekty i praca</a>
+        <a data-nav="about" href="about.html" data-pl="O mnie" data-en="About">O mnie</a>
         <a data-nav="contact" href="contact.html" data-pl="Kontakt" data-en="Contact">Kontakt</a>
       </div>
     </div>
-  </nav>
+  </header>
 
-  <main id="main-content" class="pt-20">
-    <section class="projects-hero px-8 pb-24 pt-24 md:pb-32 md:pt-32">
-      <div class="mx-auto max-w-7xl">
-        <p class="font-mono text-xs uppercase text-primary">SELECTED WORK / 2024-2026</p>
-        <h1 class="mt-6 max-w-5xl font-headline text-5xl font-bold leading-[1.02] md:text-7xl lg:text-8xl">Projects &amp; Engineering Work</h1>
-        <p class="mt-7 max-w-3xl text-lg leading-relaxed text-on-surface-variant md:text-xl" data-pl="Trzy projekty pokazujące, jak łączę software, dane i warstwę systemową. Niżej znajduje się moje doświadczenie produkcyjne w automotive, embedded Linux, medtech i QA opartym na danych." data-en="Three projects showing how I connect software, data, and systems work. Below them is my production experience in automotive, embedded Linux, medtech, and data-driven QA.">Trzy projekty pokazujące, jak łączę software, dane i warstwę systemową. Niżej znajduje się moje doświadczenie produkcyjne w automotive, embedded Linux, medtech i QA opartym na danych.</p>
-        <div class="mt-14 grid max-w-4xl md:grid-cols-3">
-          <div class="hero-stat py-5 md:px-6 md:first:pl-0">
-            <p class="font-mono text-xs uppercase text-on-surface-variant" data-pl="Obszary" data-en="Domains">Obszary</p>
-            <p class="mt-2 font-headline text-lg font-semibold">Embedded / AI / Backend</p>
+  <main id="main-content">
+    <div class="page-shell">
+      <header class="page-intro">
+        <h1 data-pl="Projekty i praca" data-en="Projects and work">Projekty i praca</h1>
+      </header>
+    </div>
+
+    <section class="section section--muted" aria-label="Wybrane projekty techniczne" data-aria-label-pl="Wybrane projekty techniczne" data-aria-label-en="Selected technical projects">
+      <div class="page-shell">
+        <div class="project-detail-list">
+        <details class="project-detail" id="ci-platform" open>
+          <summary class="project-toggle">
+            <span class="project-toggle-copy"><span class="project-kicker" data-pl="01 / CI/CD i testy" data-en="01 / CI/CD and testing">01 / CI/CD i testy</span><span class="project-title" role="heading" aria-level="2">CI/CD Test Management Platform</span><span class="project-summary" data-pl="Wielousługowa platforma do uruchamiania, monitorowania i analizowania automatycznych testów na różnych konfiguracjach sprzętu i oprogramowania." data-en="A multi-service platform for running, monitoring, and analyzing automated tests across different hardware and software configurations.">Wielousługowa platforma do uruchamiania, monitorowania i analizowania automatycznych testów na różnych konfiguracjach sprzętu i oprogramowania.</span></span>
+            <span class="project-chevron material-symbols-outlined" aria-hidden="true">expand_more</span>
+          </summary>
+          <div class="project-detail-body">
+            <div class="project-story">
+              <section><h3 data-pl="Architektura" data-en="Architecture">Architektura</h3><p data-pl="Zaprojektowałem podział systemu na współpracujące usługi: backend przetwarzający webhooki Jenkinsa, API logiki biznesowej, interfejs React oraz relacyjną bazę PostgreSQL modelowaną i migrowaną za pomocą Prisma." data-en="I designed the system as a set of cooperating services: a backend processing Jenkins webhooks, a business-logic API, a React interface, and a relational PostgreSQL database modeled and migrated with Prisma.">Zaprojektowałem podział systemu na współpracujące usługi: backend przetwarzający webhooki Jenkinsa, API logiki biznesowej, interfejs React oraz relacyjną bazę PostgreSQL modelowaną i migrowaną za pomocą Prisma.</p></section>
+              <section><h3 data-pl="Integracja z CI" data-en="CI integration">Integracja z CI</h3><p data-pl="Platforma uruchamia parametryzowane zadania Jenkinsa dla wskazanego projektu, wariantu, sprzętu i obrazu systemu. Wyniki są automatycznie pobierane i przypisywane do wewnętrznych uruchomień na podstawie identyfikatorów kolejki oraz numerów buildów." data-en="The platform triggers parameterized Jenkins jobs for a selected project, variant, hardware target, and system image. Results are collected automatically and matched to internal test runs using queue identifiers and build numbers.">Platforma uruchamia parametryzowane zadania Jenkinsa dla wskazanego projektu, wariantu, sprzętu i obrazu systemu. Wyniki są automatycznie pobierane i przypisywane do wewnętrznych uruchomień na podstawie identyfikatorów kolejki oraz numerów buildów.</p></section>
+              <section><h3 data-pl="Dane i analiza" data-en="Data and analytics">Dane i analiza</h3><p data-pl="Parsery sprowadzają różne formaty wyników do wspólnego modelu danych. Dashboardy pokazują odsetek testów zakończonych powodzeniem, historię awarii, pierwsze wystąpienia błędów i regresje powtarzające się w kolejnych uruchomieniach." data-en="Parsers normalize different result formats into a common data model. Dashboards present pass rates, failure history, first occurrences, and regressions recurring across consecutive runs.">Parsery sprowadzają różne formaty wyników do wspólnego modelu danych. Dashboardy pokazują odsetek testów zakończonych powodzeniem, historię awarii, pierwsze wystąpienia błędów i regresje powtarzające się w kolejnych uruchomieniach.</p></section>
+              <section><h3 data-pl="Utrzymanie i bezpieczeństwo" data-en="Operations and security">Utrzymanie i bezpieczeństwo</h3><p data-pl="Statusy testów aktualizuje połączenie WebSocket. Dostęp chronią JWT i role użytkowników, a środowisko Docker Compose korzysta z Nginx, kontroli stanu usług, kopii bazy oraz procedury wycofania nieudanego wdrożenia." data-en="A WebSocket connection updates test states. JWT and user roles protect access, while the Docker Compose environment uses Nginx, service health checks, database backups, and a rollback procedure for failed deployments.">Statusy testów aktualizuje połączenie WebSocket. Dostęp chronią JWT i role użytkowników, a środowisko Docker Compose korzysta z Nginx, kontroli stanu usług, kopii bazy oraz procedury wycofania nieudanego wdrożenia.</p></section>
+            </div>
+            <div class="project-actions"><div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Jenkins</span><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">PostgreSQL</span><span class="tag">Prisma</span><span class="tag">Docker</span><span class="tag">WebSockets</span></div></div>
           </div>
-          <div class="hero-stat py-5 md:px-6">
-            <p class="font-mono text-xs uppercase text-on-surface-variant" data-pl="Kontekst" data-en="Context">Kontekst</p>
-            <p class="mt-2 font-headline text-lg font-semibold">Production + R&amp;D</p>
+        </details>
+
+        <details class="project-detail" id="embedded-test-farm">
+          <summary class="project-toggle">
+            <span class="project-toggle-copy"><span class="project-kicker" data-pl="02 / Embedded i sprzęt" data-en="02 / Embedded and hardware">02 / Embedded i sprzęt</span><span class="project-title" role="heading" aria-level="2">Embedded Linux Test Farm</span><span class="project-summary" data-pl="Infrastruktura do powtarzalnego uruchamiania testów na fizycznych płytkach embedded, różnych platformach SoC i obrazach systemu." data-en="Infrastructure for repeatable test execution on physical embedded boards, multiple SoC platforms, and system images.">Infrastruktura do powtarzalnego uruchamiania testów na fizycznych płytkach embedded, różnych platformach SoC i obrazach systemu.</span></span>
+            <span class="project-chevron material-symbols-outlined" aria-hidden="true">expand_more</span>
+          </summary>
+          <div class="project-detail-body">
+            <div class="project-story">
+              <section><h3 data-pl="Środowisko" data-en="Environment">Środowisko</h3><p data-pl="Farma obejmuje fizyczne płytki deweloperskie z Linuxem, różne warianty sprzętu i SoC oraz zarządzane obrazy firmware'u i systemu. Urządzenia są współdzielone przez wiele zestawów testów." data-en="The farm consists of physical Linux development boards, multiple hardware and SoC variants, and managed firmware and system images. Devices are shared across multiple test suites.">Farma obejmuje fizyczne płytki deweloperskie z Linuxem, różne warianty sprzętu i SoC oraz zarządzane obrazy firmware'u i systemu. Urządzenia są współdzielone przez wiele zestawów testów.</p></section>
+              <section><h3 data-pl="Automatyzacja" data-en="Automation">Automatyzacja</h3><p data-pl="Jenkins dobiera urządzenie do wymagań testu, przygotowuje środowisko, wdraża właściwy obraz, uruchamia testy i zbiera logi oraz artefakty. Orkiestrację realizują skrypty w Pythonie i Bashu." data-en="Jenkins selects a device that meets test requirements, prepares the environment, deploys the correct image, runs tests, and collects logs and artifacts. Python and Bash scripts handle the orchestration.">Jenkins dobiera urządzenie do wymagań testu, przygotowuje środowisko, wdraża właściwy obraz, uruchamia testy i zbiera logi oraz artefakty. Orkiestrację realizują skrypty w Pythonie i Bashu.</p></section>
+              <section><h3 data-pl="Odporność infrastruktury" data-en="Infrastructure resilience">Odporność infrastruktury</h3><p data-pl="Mechanizmy kontroli stanu wykrywają niedostępne węzły, a procedury odzyskiwania przywracają urządzenia, które przestały odpowiadać. Każde uruchomienie obejmuje kontrolowane przygotowanie i sprzątanie środowiska." data-en="Health checks detect unavailable nodes, and recovery procedures restore devices that become unresponsive. Every run includes controlled environment setup and cleanup.">Mechanizmy kontroli stanu wykrywają niedostępne węzły, a procedury odzyskiwania przywracają urządzenia, które przestały odpowiadać. Każde uruchomienie obejmuje kontrolowane przygotowanie i sprzątanie środowiska.</p></section>
+              <section><h3 data-pl="Diagnostyka" data-en="Diagnostics">Diagnostyka</h3><p data-pl="Analizuję zdalnie procesy, usługi, sieć oraz logi aplikacyjne i systemowe. Pozwala to rozdzielać problemy infrastruktury testowej od błędów aplikacji, systemu operacyjnego i integracji ze sprzętem." data-en="I remotely analyze processes, services, networking, and application and system logs. This makes it possible to distinguish test-infrastructure failures from application, operating-system, and hardware-integration issues.">Analizuję zdalnie procesy, usługi, sieć oraz logi aplikacyjne i systemowe. Pozwala to rozdzielać problemy infrastruktury testowej od błędów aplikacji, systemu operacyjnego i integracji ze sprzętem.</p></section>
+            </div>
+            <div class="project-actions"><div class="tags"><span class="tag">Embedded Linux</span><span class="tag">Python</span><span class="tag">Bash</span><span class="tag">Jenkins</span><span class="tag">SoC</span><span class="tag">Hardware automation</span><span class="tag">CI/CD</span></div></div>
           </div>
-          <div class="hero-stat py-5 md:px-6">
-            <p class="font-mono text-xs uppercase text-on-surface-variant">Core stack</p>
-            <p class="mt-2 font-headline text-lg font-semibold">Python · Linux · Java</p>
+        </details>
+
+        <details class="project-detail" id="backscan">
+          <summary class="project-toggle">
+            <span class="project-toggle-copy"><span class="project-kicker">03 / Computer vision</span><span class="project-title" role="heading" aria-level="2">AI Posture Analysis System</span><span class="project-summary" data-pl="System analizy postawy wykorzystujący obraz RGB, głębię z kamery OAK-D i modele pose estimation." data-en="A posture analysis system using RGB imagery, OAK-D depth data, and pose-estimation models.">System analizy postawy wykorzystujący obraz RGB, głębię z kamery OAK-D i modele pose estimation.</span></span>
+            <span class="project-chevron material-symbols-outlined" aria-hidden="true">expand_more</span>
+          </summary>
+          <div class="project-detail-body">
+            <div class="project-story">
+              <section><h3 data-pl="Cel" data-en="Goal">Cel</h3><p data-pl="Prototyp miał wspierać ocenę wad postawy pomiarami asymetrii i odchyleń przestrzennych, których nie da się wiarygodnie wyznaczyć z samego obrazu 2D." data-en="The prototype was designed to support posture assessment with asymmetry and spatial-deviation measurements that cannot be reliably derived from a 2D image alone.">Prototyp miał wspierać ocenę wad postawy pomiarami asymetrii i odchyleń przestrzennych, których nie da się wiarygodnie wyznaczyć z samego obrazu 2D.</p></section>
+              <section><h3 data-pl="Przepływ danych" data-en="Data flow">Przepływ danych</h3><p data-pl="Kamera OAK-D dostarcza zsynchronizowany obraz RGB i dane głębi. YOLOv8-Pose oraz BlazePose wykrywają punkty ciała, które są następnie łączone z informacją przestrzenną." data-en="The OAK-D camera provides synchronized RGB imagery and depth data. YOLOv8-Pose and BlazePose detect body keypoints, which are then combined with spatial information.">Kamera OAK-D dostarcza zsynchronizowany obraz RGB i dane głębi. YOLOv8-Pose oraz BlazePose wykrywają punkty ciała, które są następnie łączone z informacją przestrzenną.</p></section>
+              <section><h3 data-pl="Implementacja" data-en="Implementation">Implementacja</h3><p data-pl="Pipeline obejmuje pobranie i przygotowanie obrazu, inferencję modeli, przetwarzanie punktów w przestrzeni 3D, obliczenie odchyleń oraz generowanie raportu." data-en="The pipeline covers image acquisition and preprocessing, model inference, 3D keypoint processing, deviation calculations, and report generation.">Pipeline obejmuje pobranie i przygotowanie obrazu, inferencję modeli, przetwarzanie punktów w przestrzeni 3D, obliczenie odchyleń oraz generowanie raportu.</p></section>
+              <section><h3 data-pl="Mój zakres" data-en="My scope">Mój zakres</h3><p data-pl="Samodzielnie zaprojektowałem i zaimplementowałem prototyp: integrację kamery, pipeline detekcji, analizę asymetrii i raportowanie wyników." data-en="I independently designed and implemented the prototype, including camera integration, the detection pipeline, asymmetry analysis, and result reporting.">Samodzielnie zaprojektowałem i zaimplementowałem prototyp: integrację kamery, pipeline detekcji, analizę asymetrii i raportowanie wyników.</p></section>
+            </div>
+            <div class="project-actions"><div class="tags"><span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">OAK-D</span><span class="tag">YOLOv8-Pose</span><span class="tag">BlazePose</span><span class="tag">OpenVINO</span></div><p class="project-note" data-pl="Repozytorium prywatne." data-en="Private repository.">Repozytorium prywatne.</p></div>
           </div>
+        </details>
+
+        <details class="project-detail" id="flood-routing">
+          <summary class="project-toggle">
+            <span class="project-toggle-copy"><span class="project-kicker" data-pl="04 / System geoprzestrzenny" data-en="04 / Geospatial system">04 / System geoprzestrzenny</span><span class="project-title" role="heading" aria-level="2">Flood-aware evacuation routing</span><span class="project-summary" data-pl="Aplikacja wyznaczająca trasę ewakuacji z pominięciem odcinków dróg objętych powodzią." data-en="An application that calculates an evacuation route while excluding road segments affected by flooding.">Aplikacja wyznaczająca trasę ewakuacji z pominięciem odcinków dróg objętych powodzią.</span></span>
+            <span class="project-chevron material-symbols-outlined" aria-hidden="true">expand_more</span>
+          </summary>
+          <div class="project-detail-body">
+            <div class="project-story">
+              <section><h3 data-pl="Problem" data-en="Problem">Problem</h3><p data-pl="Standardowy algorytm najkrótszej ścieżki może poprowadzić przez drogę odciętą przez wodę. Trasa musi więc uwzględnić aktualną geometrię zagrożenia, a nie tylko długość odcinków." data-en="A standard shortest-path algorithm may route through a road cut off by water. The route therefore needs to account for current hazard geometry, not only segment length.">Standardowy algorytm najkrótszej ścieżki może poprowadzić przez drogę odciętą przez wodę. Trasa musi więc uwzględnić aktualną geometrię zagrożenia, a nie tylko długość odcinków.</p></section>
+              <section><h3 data-pl="Dane drogowe" data-en="Road data">Dane drogowe</h3><p data-pl="Użytkownik wskazuje obszar mapy, a backend pobiera drogi z OpenStreetMap przez Overpass API. Dane są zamieniane na GeoJSON i używane do zbudowania grafu NetworkX." data-en="The user selects a map area, and the backend downloads roads from OpenStreetMap through the Overpass API. The data is converted to GeoJSON and used to build a NetworkX graph.">Użytkownik wskazuje obszar mapy, a backend pobiera drogi z OpenStreetMap przez Overpass API. Dane są zamieniane na GeoJSON i używane do zbudowania grafu NetworkX.</p></section>
+              <section><h3 data-pl="Strefy zalania i routing" data-en="Flood zones and routing">Strefy zalania i routing</h3><p data-pl="Obraz z Sentinel Hub jest przetwarzany do maski i poligonów zalania. Krawędzie grafu przecinające te poligony są blokowane, po czym trasa liczona jest na podgrafie dostępnych dróg." data-en="Sentinel Hub imagery is processed into a flood mask and polygons. Graph edges intersecting those polygons are blocked, and the route is calculated on the remaining-road subgraph.">Obraz z Sentinel Hub jest przetwarzany do maski i poligonów zalania. Krawędzie grafu przecinające te poligony są blokowane, po czym trasa liczona jest na podgrafie dostępnych dróg.</p></section>
+              <section><h3 data-pl="Interfejs i mój zakres" data-en="Interface and my scope">Interfejs i mój zakres</h3><p data-pl="Zaimplementowałem backend od pobierania OSM po operacje geometryczne i routing. Frontend w Leaflet pozwala wybrać punkty, wizualizuje drogi, strefy zalania i wynik zwracany jako GeoJSON; całość uruchamia Docker Compose." data-en="I implemented the backend from OSM ingestion through geometry operations and routing. The Leaflet frontend lets users select points and displays roads, flood zones, and the GeoJSON result; Docker Compose runs the complete application.">Zaimplementowałem backend od pobierania OSM po operacje geometryczne i routing. Frontend w Leaflet pozwala wybrać punkty, wizualizuje drogi, strefy zalania i wynik zwracany jako GeoJSON; całość uruchamia Docker Compose.</p></section>
+            </div>
+            <div class="project-actions"><div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">NetworkX</span><span class="tag">GeoJSON</span><span class="tag">Leaflet</span><span class="tag">Docker</span></div><a class="text-link" href="https://github.com/Adam-Sapiecha/SentinelHub" target="_blank" rel="noreferrer"><span data-pl="Zobacz kod na GitHubie" data-en="View source on GitHub">Zobacz kod na GitHubie</span><span class="material-symbols-outlined" aria-hidden="true">open_in_new</span></a></div>
+          </div>
+        </details>
+
+        <details class="project-detail" id="dual-agent">
+          <summary class="project-toggle">
+            <span class="project-toggle-copy"><span class="project-kicker" data-pl="05 / System agentowy" data-en="05 / Agent system">05 / System agentowy</span><span class="project-title" role="heading" aria-level="2">Dual-Agent Support System</span><span class="project-summary" data-pl="Aplikacja Java z routerem intencji oraz osobnymi agentami do wsparcia technicznego i rozliczeń." data-en="A Java application with an intent router and separate agents for technical and billing support.">Aplikacja Java z routerem intencji oraz osobnymi agentami do wsparcia technicznego i rozliczeń.</span></span>
+            <span class="project-chevron material-symbols-outlined" aria-hidden="true">expand_more</span>
+          </summary>
+          <div class="project-detail-body">
+            <div class="project-story">
+              <section><h3 data-pl="Założenie" data-en="Concept">Założenie</h3><p data-pl="Jedna wieloturowa rozmowa obsługuje dwa różne typy spraw. Router rozpoznaje intencję wiadomości i przekazuje wspólny kontekst do agenta technicznego albo rozliczeniowego." data-en="One multi-turn conversation handles two different request types. A router identifies message intent and passes the shared context to either the technical or billing agent.">Jedna wieloturowa rozmowa obsługuje dwa różne typy spraw. Router rozpoznaje intencję wiadomości i przekazuje wspólny kontekst do agenta technicznego albo rozliczeniowego.</p></section>
+              <section><h3 data-pl="Agent techniczny" data-en="Technical agent">Agent techniczny</h3><p data-pl="Odpowiedzi są ograniczone do lokalnych plików dokumentacji. Gdy materiał nie zawiera potrzebnej informacji, agent prosi o doprecyzowanie zamiast tworzyć odpowiedź bez źródła." data-en="Answers are limited to local documentation files. When the material does not contain the required information, the agent asks for clarification instead of generating an unsupported answer.">Odpowiedzi są ograniczone do lokalnych plików dokumentacji. Gdy materiał nie zawiera potrzebnej informacji, agent prosi o doprecyzowanie zamiast tworzyć odpowiedź bez źródła.</p></section>
+              <section><h3 data-pl="Agent rozliczeniowy" data-en="Billing agent">Agent rozliczeniowy</h3><p data-pl="Obsługuje pytania o ceny planów i terminy zwrotów. Może też otworzyć sprawę zwrotu po zebraniu adresu e-mail i przyczyny zgłoszenia." data-en="It handles plan-pricing questions and refund timelines. It can also open a refund case after collecting an email address and the reason for the request.">Obsługuje pytania o ceny planów i terminy zwrotów. Może też otworzyć sprawę zwrotu po zebraniu adresu e-mail i przyczyny zgłoszenia.</p></section>
+              <section><h3 data-pl="Implementacja i mój zakres" data-en="Implementation and my scope">Implementacja i mój zakres</h3><p data-pl="Zaprojektowałem router, obu agentów, obsługę kontekstu oraz zasady odpowiedzi. Projekt działa na Javie 17, korzysta z OpenAI API, buduje się przez Maven Wrapper i ma przygotowany obraz Docker." data-en="I designed the router, both agents, context handling, and response rules. The project runs on Java 17, uses the OpenAI API, builds with Maven Wrapper, and includes a Docker image.">Zaprojektowałem router, obu agentów, obsługę kontekstu oraz zasady odpowiedzi. Projekt działa na Javie 17, korzysta z OpenAI API, buduje się przez Maven Wrapper i ma przygotowany obraz Docker.</p></section>
+            </div>
+            <div class="project-actions"><div class="tags"><span class="tag">Java 17</span><span class="tag">OpenAI API</span><span class="tag">Maven</span><span class="tag">Docker</span></div><a class="text-link" href="https://github.com/Adam-Sapiecha/Dual-agent-support-chatbot" target="_blank" rel="noreferrer"><span data-pl="Zobacz kod na GitHubie" data-en="View source on GitHub">Zobacz kod na GitHubie</span><span class="material-symbols-outlined" aria-hidden="true">open_in_new</span></a></div>
+          </div>
+        </details>
         </div>
       </div>
     </section>
-    <section class="px-8" aria-labelledby="featured-projects-title">
-      <div class="mx-auto max-w-7xl">
-        <div class="flex items-end justify-between gap-6 pb-10">
-          <div>
-            <p class="font-mono text-xs uppercase text-primary">01 / 03</p>
-            <h2 id="featured-projects-title" class="mt-3 font-headline text-3xl font-bold md:text-4xl">Featured projects</h2>
-          </div>
-          <p class="hidden font-mono text-xs uppercase text-on-surface-variant md:block" data-pl="Trzy pełne case studies" data-en="Three complete case studies">Trzy pełne case studies</p>
+
+    <section class="section" aria-labelledby="work-heading">
+      <div class="page-shell">
+        <div class="section-header section-header--single">
+          <div><h2 id="work-heading" data-pl="Nad czym pracowałem" data-en="What I worked on">Nad czym pracowałem</h2></div>
         </div>
-        <article class="featured-project" id="backscan">
-          <div id="backscan-architecture" class="case-visual" role="img" aria-label="Diagram systemu analizy postawy z kamerą głębi i punktami ciała" data-aria-label-pl="Diagram systemu analizy postawy z kamerą głębi i punktami ciała" data-aria-label-en="Posture analysis system diagram with a depth camera and body keypoints">
-            <span class="case-number" aria-hidden="true">01</span>
-            <div class="diagram-shell">
-              <span class="diagram-label left-0 top-0">OAK-D / depth</span>
-              <span class="diagram-label right-0 top-0">Pose pipeline</span>
-              <div class="pose-frame">
-                <div class="pose-axis"></div>
-                <div class="pose-head"></div>
-                <span class="pose-bone pose-bone--torso"></span>
-                <span class="pose-bone pose-bone--shoulders"></span>
-                <span class="pose-bone pose-bone--arm-left"></span>
-                <span class="pose-bone pose-bone--arm-right"></span>
-                <span class="pose-bone pose-bone--hips"></span>
-                <span class="pose-bone pose-bone--leg-left"></span>
-                <span class="pose-bone pose-bone--leg-right"></span>
-                <span class="pose-joint" style="left: 50%; top: 32%"></span>
-                <span class="pose-joint" style="left: 32%; top: 32%"></span>
-                <span class="pose-joint" style="left: 68%; top: 32%"></span>
-                <span class="pose-joint" style="left: 50%; top: 58%"></span>
-                <span class="pose-joint" style="left: 39%; top: 58%"></span>
-                <span class="pose-joint" style="left: 61%; top: 58%"></span>
-              </div>
-              <div class="diagram-status" data-pl="Analiza asymetrii aktywna" data-en="Asymmetry analysis active">Analiza asymetrii aktywna</div>
+
+        <div class="work-history">
+          <section class="work-role" aria-labelledby="samsung-heading">
+            <header class="work-role-header">
+              <div><h3 id="samsung-heading">Samsung R&amp;D Institute</h3><p>Junior Automotive Software Engineer</p></div>
+              <span class="meta" data-pl="od kwietnia 2026" data-en="since April 2026">od kwietnia 2026</span>
+            </header>
+            <p class="work-role-description" data-pl="Pracuję przy oprogramowaniu automotive uruchamianym na platformach SoC. Łączę rozwój narzędzi testowych z pracą bezpośrednio w Linuxie i na fizycznym sprzęcie: od automatyzacji uruchomień w Jenkinsie po analizę problemów na poziomie aplikacji, userspace'u, kernela oraz infrastruktury testowej." data-en="I work on automotive software running on SoC platforms. My role combines test-tool development with direct work in Linux and on physical hardware, from automating Jenkins runs to diagnosing issues across the application, userspace, kernel, and test-infrastructure layers.">Pracuję przy oprogramowaniu automotive uruchamianym na platformach SoC. Łączę rozwój narzędzi testowych z pracą bezpośrednio w Linuxie i na fizycznym sprzęcie: od automatyzacji uruchomień w Jenkinsie po analizę problemów na poziomie aplikacji, userspace'u, kernela oraz infrastruktury testowej.</p>
+            <div class="work-project-links">
+              <a class="work-project-link" href="#ci-platform"><span><span class="meta" data-pl="Projekt 01" data-en="Project 01">Projekt 01</span><strong>CI/CD Test Management Platform</strong></span><span class="material-symbols-outlined" aria-hidden="true">arrow_upward</span></a>
+              <a class="work-project-link" href="#embedded-test-farm"><span><span class="meta" data-pl="Projekt 02" data-en="Project 02">Projekt 02</span><strong>Embedded Linux Test Farm</strong></span><span class="material-symbols-outlined" aria-hidden="true">arrow_upward</span></a>
             </div>
-          </div>
-          <div class="case-copy">
-            <p class="case-label font-mono text-xs uppercase text-primary">FEATURED PROJECT / BACKSCAN</p>
-            <h3 class="mt-4 font-headline text-4xl font-bold leading-tight md:text-5xl">AI Posture Analysis System</h3>
-            <p class="mt-5 text-lg leading-relaxed text-on-surface-variant" data-pl="System computer vision łączący obraz RGB, dane głębi i detekcję punktów ciała, aby analizować asymetrię postawy i generować raport." data-en="A computer vision system combining RGB imagery, depth data, and body keypoint detection to analyze posture asymmetry and generate a report.">System computer vision łączący obraz RGB, dane głębi i detekcję punktów ciała, aby analizować asymetrię postawy i generować raport.</p>
-            <div class="case-details">
-              <div class="case-detail"><p class="font-label text-xs uppercase text-on-surface-variant">Problem</p><p class="mt-3 text-sm leading-relaxed" data-pl="Ocena postawy wymaga spójnych pomiarów, których nie zapewnia sam obraz 2D." data-en="Posture assessment needs consistent measurements that a 2D image alone cannot provide.">Ocena postawy wymaga spójnych pomiarów, których nie zapewnia sam obraz 2D.</p></div>
-              <div class="case-detail"><p class="font-label text-xs uppercase text-on-surface-variant">Solution</p><p class="mt-3 text-sm leading-relaxed" data-pl="Pipeline łączy kamerę OAK-D, modele pose estimation i analizę odchyleń." data-en="The pipeline combines an OAK-D camera, pose-estimation models, and deviation analysis.">Pipeline łączy kamerę OAK-D, modele pose estimation i analizę odchyleń.</p></div>
-              <div class="case-detail"><p class="font-label text-xs uppercase text-on-surface-variant">Engineering</p><p class="mt-3 text-sm leading-relaxed" data-pl="Integracja hardware'u, przetwarzanie obrazu, inferencja i raportowanie wyników." data-en="Hardware integration, image processing, inference, and result reporting.">Integracja hardware'u, przetwarzanie obrazu, inferencja i raportowanie wyników.</p></div>
+          </section>
+
+          <section class="work-role" aria-labelledby="sorno-heading">
+            <header class="work-role-header">
+              <div><h3 id="sorno-heading">Fundacja Sorno</h3><p>Fullstack Developer</p></div>
+              <span class="meta">08/2024-2026</span>
+            </header>
+            <p class="work-role-description" data-pl="Pracowałem bezpośrednio z klientem nad produkcyjnym systemem medycznym, od analizy wymagań i architektury po wdrożenie oraz utrzymanie. Rozwiązanie łączyło portal użytkownika, aplikację mobilną i backend obsługujący wyniki badań, dokumenty, konta oraz płatności." data-en="I worked directly with the client on a production medical system, from requirements analysis and architecture through deployment and maintenance. The solution combined a user portal, mobile application, and backend handling medical results, documents, accounts, and payments.">Pracowałem bezpośrednio z klientem nad produkcyjnym systemem medycznym, od analizy wymagań i architektury po wdrożenie oraz utrzymanie. Rozwiązanie łączyło portal użytkownika, aplikację mobilną i backend obsługujący wyniki badań, dokumenty, konta oraz płatności.</p>
+            <div class="work-delivery-list">
+              <article class="work-delivery">
+                <div class="work-delivery-title"><span class="meta">01</span><h4>Sorno MedTech Platform</h4></div>
+                <div class="work-delivery-content"><p data-pl="Zaprojektowałem i rozwijałem backend produkcyjnej platformy oraz REST API używane przez aplikacje webową i mobilną." data-en="I designed and developed the production platform backend and the REST APIs used by the web and mobile applications.">Zaprojektowałem i rozwijałem backend produkcyjnej platformy oraz REST API używane przez aplikacje webową i mobilną.</p><ul class="work-points"><li data-pl="Procesy publikacji wyników badań, obsługa dokumentacji i kont użytkowników." data-en="Workflows for publishing medical results, document handling, and user accounts.">Procesy publikacji wyników badań, obsługa dokumentacji i kont użytkowników.</li><li data-pl="Płatności Stripe oraz integracje Firebase, MongoDB i Google Cloud Platform." data-en="Stripe payments and integrations with Firebase, MongoDB, and Google Cloud Platform.">Płatności Stripe oraz integracje Firebase, MongoDB i Google Cloud Platform.</li><li data-pl="Walidacja danych, obsługa błędów, wdrożenie i diagnozowanie problemów produkcyjnych." data-en="Data validation, error handling, deployment, and production troubleshooting.">Walidacja danych, obsługa błędów, wdrożenie i diagnozowanie problemów produkcyjnych.</li></ul><div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Node.js</span><span class="tag">MongoDB</span><span class="tag">Firebase</span><span class="tag">GCP</span><span class="tag">Stripe</span></div></div>
+              </article>
+              <article class="work-delivery">
+                <div class="work-delivery-title"><span class="meta">02</span><h4 data-pl="Aplikacja mobilna Sorno" data-en="Sorno mobile application">Aplikacja mobilna Sorno</h4></div>
+                <div class="work-delivery-content"><p data-pl="Rozwijałem aplikację Flutter zapewniającą użytkownikom dostęp do wyników badań, dokumentów i funkcji konta." data-en="I developed a Flutter application giving users access to medical results, documents, and account features.">Rozwijałem aplikację Flutter zapewniającą użytkownikom dostęp do wyników badań, dokumentów i funkcji konta.</p><ul class="work-points"><li data-pl="Integracja z backendem przez REST API oraz usługi Firebase." data-en="Backend integration through REST APIs and Firebase services.">Integracja z backendem przez REST API oraz usługi Firebase.</li><li data-pl="Synchronizacja danych i spójna obsługa błędów komunikacji." data-en="Data synchronization and consistent handling of communication failures.">Synchronizacja danych i spójna obsługa błędów komunikacji.</li><li data-pl="Nawigacja i procesy użytkownika zaprojektowane wokół szybkiego dostępu do dokumentacji." data-en="Navigation and user flows designed around quick access to documentation.">Nawigacja i procesy użytkownika zaprojektowane wokół szybkiego dostępu do dokumentacji.</li></ul><div class="tags"><span class="tag">Flutter</span><span class="tag">Firebase</span><span class="tag">REST API</span></div></div>
+              </article>
             </div>
-            <p class="mt-6 border-l-2 border-primary/60 pl-4 text-sm leading-relaxed text-on-surface-variant"><strong class="text-on-background" data-pl="Mój wkład:" data-en="My contribution:">Mój wkład:</strong> <span data-pl="integracja OAK-D, implementacja pipeline'u detekcji i analiza wyników 3D." data-en="OAK-D integration, implementation of the detection pipeline, and 3D result analysis.">integracja OAK-D, implementacja pipeline'u detekcji i analiza wyników 3D.</span></p>
-            <div class="mt-6 flex flex-wrap gap-2" aria-label="Stack"><span class="stack-chip">Python</span><span class="stack-chip">YOLOv8</span><span class="stack-chip">BlazePose</span><span class="stack-chip">OpenVINO</span><span class="stack-chip">OAK-D</span></div>
-            <div class="case-actions">
-              <span class="case-action case-action--secondary" aria-disabled="true"><span class="material-symbols-outlined text-base" aria-hidden="true">lock</span><span data-pl="Projekt prywatny" data-en="Private project">Projekt prywatny</span></span>
-              <a class="case-action case-action--text" href="#backscan-architecture"><span data-pl="Architektura" data-en="Architecture">Architektura</span><span class="material-symbols-outlined text-base" aria-hidden="true">arrow_upward</span></a>
+          </section>
+
+          <section class="work-role" aria-labelledby="tikrow-heading">
+            <header class="work-role-header">
+              <div><h3 id="tikrow-heading">Tikrow</h3><p>QA Tester / Data Analyst</p></div>
+              <span class="meta">07/2025-2026</span>
+            </header>
+            <p class="work-role-description" data-pl="Łączyłem testowanie API z analizą danych, dzięki czemu problemy mogłem weryfikować zarówno po zachowaniu endpointów, jak i po stanie danych w systemie. Automatyzowałem powtarzalne analizy i wykorzystywałem modele ML do szukania anomalii oraz wzorców trudnych do wykrycia w testach manualnych." data-en="I combined API testing with data analysis, allowing me to verify issues through both endpoint behavior and the underlying system data. I automated repeatable analyses and used ML models to find anomalies and patterns that were difficult to detect through manual testing.">Łączyłem testowanie API z analizą danych, dzięki czemu problemy mogłem weryfikować zarówno po zachowaniu endpointów, jak i po stanie danych w systemie. Automatyzowałem powtarzalne analizy i wykorzystywałem modele ML do szukania anomalii oraz wzorców trudnych do wykrycia w testach manualnych.</p>
+            <div class="work-scope">
+              <ul class="work-points"><li data-pl="Testowanie REST API w Postmanie oraz analiza logiki backendu i przypadków brzegowych." data-en="REST API testing in Postman and analysis of backend logic and edge cases.">Testowanie REST API w Postmanie oraz analiza logiki backendu i przypadków brzegowych.</li><li data-pl="Łączenie odpowiedzi API z zapytaniami SQL w celu wykrywania niespójności i problemów jakości danych." data-en="Combining API responses with SQL queries to detect inconsistencies and data-quality issues.">Łączenie odpowiedzi API z zapytaniami SQL w celu wykrywania niespójności i problemów jakości danych.</li><li data-pl="Skrypty Python automatyzujące analizę oraz modele wspierające wykrywanie nietypowych wzorców." data-en="Python scripts automating analysis and models supporting the detection of unusual patterns.">Skrypty Python automatyzujące analizę oraz modele wspierające wykrywanie nietypowych wzorców.</li></ul>
+              <div class="tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">REST API</span><span class="tag">Postman</span><span class="tag">Machine Learning</span></div>
             </div>
-          </div>
-        </article>
-        <article class="featured-project featured-project--reverse" id="flood-routing">
-          <div id="flood-architecture" class="case-visual" role="img" aria-label="Mapa z obszarem zalanym i trasą ewakuacji omijającą zagrożenie" data-aria-label-pl="Mapa z obszarem zalanym i trasą ewakuacji omijającą zagrożenie" data-aria-label-en="Map with a flooded area and an evacuation route avoiding the hazard">
-            <span class="case-number" aria-hidden="true">02</span>
-            <div class="diagram-shell">
-              <span class="diagram-label left-0 top-0">OpenStreetMap</span>
-              <span class="diagram-label right-0 top-0">Sentinel Hub</span>
-              <div class="map-surface">
-                <span class="road road--1"></span><span class="road road--2"></span><span class="road road--3"></span><span class="road road--4"></span><span class="road road--5"></span>
-                <span class="flood-zone"></span>
-                <span class="route-segment route-segment--1"></span><span class="route-segment route-segment--2"></span><span class="route-segment route-segment--3"></span><span class="route-segment route-segment--4"></span>
-                <span class="map-point map-point--start"></span><span class="map-point map-point--end"></span>
-              </div>
-              <div class="diagram-status" data-pl="Zalane krawędzie zablokowane" data-en="Flooded edges blocked">Zalane krawędzie zablokowane</div>
+          </section>
+
+          <section class="work-role" aria-labelledby="web-heading">
+            <header class="work-role-header"><div><h3 id="web-heading" data-pl="Realizacje webowe" data-en="Web deliveries">Realizacje webowe</h3></div></header>
+            <p class="work-role-description" data-pl="Samodzielnie przygotowywałem również publiczne strony dla organizacji i biznesu, odpowiadając za strukturę informacji, frontend, responsywność i publikację." data-en="I also independently delivered public websites for organizations and businesses, taking responsibility for information structure, frontend implementation, responsive behavior, and deployment.">Samodzielnie przygotowywałem również publiczne strony dla organizacji i biznesu, odpowiadając za strukturę informacji, frontend, responsywność i publikację.</p>
+            <div class="work-delivery-list">
+              <article class="work-delivery work-delivery--compact"><div class="work-delivery-title"><span class="meta">01</span><h4 data-pl="KawiARKA - strona kawiarni społecznej" data-en="KawiARKA - social cafe website">KawiARKA - strona kawiarni społecznej</h4></div><div class="work-delivery-content"><p data-pl="Strona kawiarni społecznej tworzonej przez Fundację L'Arche Warszawa. Przedstawia misję miejsca, gospodarzy, menu, możliwości wsparcia, galerię oraz informacje dla odwiedzających." data-en="A website for a social cafe created by the L'Arche Warsaw Foundation. It presents the venue's mission, hosts, menu, ways to offer support, gallery, and visitor information.">Strona kawiarni społecznej tworzonej przez Fundację L'Arche Warszawa. Przedstawia misję miejsca, gospodarzy, menu, możliwości wsparcia, galerię oraz informacje dla odwiedzających.</p><div class="delivery-actions"><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div><a class="text-link" href="https://kawiarka.org" target="_blank" rel="noreferrer"><span data-pl="Otwórz stronę" data-en="Visit website">Otwórz stronę</span><span class="material-symbols-outlined" aria-hidden="true">open_in_new</span></a></div></div></article>
+              <article class="work-delivery work-delivery--compact"><div class="work-delivery-title"><span class="meta">02</span><h4 data-pl="Fundacja OVILE - strona organizacji" data-en="OVILE Foundation - organization website">Fundacja OVILE - strona organizacji</h4></div><div class="work-delivery-content"><p data-pl="Serwis fundacji wspierającej osoby z niepełnosprawnością intelektualną oraz ich bliskich. Porządkuje informacje o misji, działalności, aktualnościach, możliwościach wsparcia i kontakcie." data-en="A website for a foundation supporting people with intellectual disabilities and their families. It organizes information about the mission, activities, news, ways to provide support, and contact details.">Serwis fundacji wspierającej osoby z niepełnosprawnością intelektualną oraz ich bliskich. Porządkuje informacje o misji, działalności, aktualnościach, możliwościach wsparcia i kontakcie.</p><div class="delivery-actions"><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div><a class="text-link" href="https://ovile.pl" target="_blank" rel="noreferrer"><span data-pl="Otwórz stronę" data-en="Visit website">Otwórz stronę</span><span class="material-symbols-outlined" aria-hidden="true">open_in_new</span></a></div></div></article>
             </div>
-          </div>
-          <div class="case-copy">
-            <p class="case-label font-mono text-xs uppercase text-primary">FEATURED PROJECT / SENTINELHUB</p>
-            <h3 class="mt-4 font-headline text-4xl font-bold leading-tight md:text-5xl">Flood-aware evacuation routing</h3>
-            <p class="mt-5 text-lg leading-relaxed text-on-surface-variant" data-pl="Aplikacja wyznacza trasę ewakuacji, łącząc graf dróg OpenStreetMap ze strefami zalania wykrytymi w danych Sentinel Hub." data-en="The application calculates an evacuation route by combining an OpenStreetMap road graph with flood zones detected in Sentinel Hub data.">Aplikacja wyznacza trasę ewakuacji, łącząc graf dróg OpenStreetMap ze strefami zalania wykrytymi w danych Sentinel Hub.</p>
-            <div class="case-details">
-              <div class="case-detail"><p class="font-label text-xs uppercase text-on-surface-variant">Problem</p><p class="mt-3 text-sm leading-relaxed" data-pl="Najkrótsza trasa może prowadzić przez drogi, które zostały odcięte przez powódź." data-en="The shortest route may cross roads that have been cut off by flooding.">Najkrótsza trasa może prowadzić przez drogi, które zostały odcięte przez powódź.</p></div>
-              <div class="case-detail"><p class="font-label text-xs uppercase text-on-surface-variant">Solution</p><p class="mt-3 text-sm leading-relaxed" data-pl="Poligony zalania blokują przecinające je krawędzie przed obliczeniem ścieżki." data-en="Flood polygons block intersecting graph edges before the route is calculated.">Poligony zalania blokują przecinające je krawędzie przed obliczeniem ścieżki.</p></div>
-              <div class="case-detail"><p class="font-label text-xs uppercase text-on-surface-variant">Engineering</p><p class="mt-3 text-sm leading-relaxed" data-pl="FastAPI, NetworkX, GeoJSON, Leaflet i Docker Compose tworzą pełny przepływ danych." data-en="FastAPI, NetworkX, GeoJSON, Leaflet, and Docker Compose form the complete data flow.">FastAPI, NetworkX, GeoJSON, Leaflet i Docker Compose tworzą pełny przepływ danych.</p></div>
-            </div>
-            <p class="mt-6 border-l-2 border-primary/60 pl-4 text-sm leading-relaxed text-on-surface-variant"><strong class="text-on-background" data-pl="Mój wkład:" data-en="My contribution:">Mój wkład:</strong> <span data-pl="backend od pobrania OSM, przez przecięcia geometrii, po routing i wizualizację wyniku." data-en="the backend flow from OSM ingestion and geometry intersections to routing and result visualization.">backend od pobrania OSM, przez przecięcia geometrii, po routing i wizualizację wyniku.</span></p>
-            <div class="mt-6 flex flex-wrap gap-2" aria-label="Stack"><span class="stack-chip">Python</span><span class="stack-chip">FastAPI</span><span class="stack-chip">NetworkX</span><span class="stack-chip">GeoJSON</span><span class="stack-chip">Docker</span></div>
-            <div class="case-actions">
-              <a class="case-action case-action--primary" href="https://github.com/Adam-Sapiecha/SentinelHub" target="_blank" rel="noreferrer"><span class="material-symbols-outlined text-base" aria-hidden="true">code</span><span data-pl="Zobacz kod" data-en="View source">Zobacz kod</span></a>
-              <span class="case-action case-action--secondary" aria-disabled="true"><span class="material-symbols-outlined text-base" aria-hidden="true">laptop</span><span data-pl="Demo lokalne" data-en="Local demo">Demo lokalne</span></span>
-              <a class="case-action case-action--text" href="#flood-architecture"><span data-pl="Architektura" data-en="Architecture">Architektura</span><span class="material-symbols-outlined text-base" aria-hidden="true">arrow_upward</span></a>
-            </div>
-          </div>
-        </article>
-        <article class="featured-project" id="dual-agent">
-          <div id="agent-architecture" class="case-visual" role="img" aria-label="Diagram routera kierującego pytania do agenta technicznego i billingowego" data-aria-label-pl="Diagram routera kierującego pytania do agenta technicznego i billingowego" data-aria-label-en="Diagram of a router directing questions to technical and billing agents">
-            <span class="case-number" aria-hidden="true">03</span>
-            <div class="diagram-shell">
-              <span class="diagram-label left-0 top-0">Multi-turn chat</span>
-              <span class="diagram-label right-0 top-0">Grounded answers</span>
-              <div class="agent-flow">
-                <span class="agent-line agent-line--1"></span><span class="agent-line agent-line--2"></span><span class="agent-line agent-line--3"></span><span class="agent-line agent-line--4"></span>
-                <div class="agent-node agent-node--router">Intent<br />router</div>
-                <div class="agent-node agent-node--tech">Technical<br />agent</div>
-                <div class="agent-node agent-node--billing">Billing<br />agent</div>
-                <div class="agent-node agent-node--docs">Local docs</div>
-                <div class="agent-node agent-node--case">Support case</div>
-              </div>
-              <div class="diagram-status" data-pl="Routing zapytań aktywny" data-en="Query routing active">Routing zapytań aktywny</div>
-            </div>
-          </div>
-          <div class="case-copy">
-            <p class="case-label font-mono text-xs uppercase text-primary">FEATURED PROJECT / JAVA AI</p>
-            <h3 class="mt-4 font-headline text-4xl font-bold leading-tight md:text-5xl">Dual-Agent Support System</h3>
-            <p class="mt-5 text-lg leading-relaxed text-on-surface-variant" data-pl="System wsparcia z routerem intencji i dwoma wyspecjalizowanymi agentami działającymi w jednej, wieloturowej rozmowie." data-en="A support system with an intent router and two specialized agents operating within one multi-turn conversation.">System wsparcia z routerem intencji i dwoma wyspecjalizowanymi agentami działającymi w jednej, wieloturowej rozmowie.</p>
-            <div class="case-details">
-              <div class="case-detail"><p class="font-label text-xs uppercase text-on-surface-variant">Problem</p><p class="mt-3 text-sm leading-relaxed" data-pl="Pytania techniczne i billingowe wymagają innych danych, narzędzi i zasad odpowiedzi." data-en="Technical and billing questions require different data, tools, and response rules.">Pytania techniczne i billingowe wymagają innych danych, narzędzi i zasad odpowiedzi.</p></div>
-              <div class="case-detail"><p class="font-label text-xs uppercase text-on-surface-variant">Solution</p><p class="mt-3 text-sm leading-relaxed" data-pl="Router przekazuje kontekst do agenta technicznego lub billingowego." data-en="A router passes the conversation context to either the technical or billing agent.">Router przekazuje kontekst do agenta technicznego lub billingowego.</p></div>
-              <div class="case-detail"><p class="font-label text-xs uppercase text-on-surface-variant">Engineering</p><p class="mt-3 text-sm leading-relaxed" data-pl="Java 17, lokalna dokumentacja, OpenAI API, Maven i obraz Docker." data-en="Java 17, local documentation, the OpenAI API, Maven, and a Docker image.">Java 17, lokalna dokumentacja, OpenAI API, Maven i obraz Docker.</p></div>
-            </div>
-            <p class="mt-6 border-l-2 border-primary/60 pl-4 text-sm leading-relaxed text-on-surface-variant"><strong class="text-on-background" data-pl="Mój wkład:" data-en="My contribution:">Mój wkład:</strong> <span data-pl="projekt routera, implementacja obu agentów, reguły uziemiania odpowiedzi i konteneryzacja." data-en="router design, implementation of both agents, answer-grounding rules, and containerization.">projekt routera, implementacja obu agentów, reguły uziemiania odpowiedzi i konteneryzacja.</span></p>
-            <div class="mt-6 flex flex-wrap gap-2" aria-label="Stack"><span class="stack-chip">Java 17</span><span class="stack-chip">OpenAI API</span><span class="stack-chip">Maven</span><span class="stack-chip">Docker</span><span class="stack-chip">RAG</span></div>
-            <div class="case-actions">
-              <a class="case-action case-action--primary" href="https://github.com/Adam-Sapiecha/Dual-agent-support-chatbot" target="_blank" rel="noreferrer"><span class="material-symbols-outlined text-base" aria-hidden="true">code</span><span data-pl="Zobacz kod" data-en="View source">Zobacz kod</span></a>
-              <span class="case-action case-action--secondary" aria-disabled="true"><span class="material-symbols-outlined text-base" aria-hidden="true">laptop</span><span data-pl="Demo lokalne" data-en="Local demo">Demo lokalne</span></span>
-              <a class="case-action case-action--text" href="#agent-architecture"><span data-pl="Architektura" data-en="Architecture">Architektura</span><span class="material-symbols-outlined text-base" aria-hidden="true">arrow_upward</span></a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-    <section class="bg-surface-container-low px-8 py-28 md:py-36" aria-labelledby="experience-title">
-      <div class="mx-auto max-w-7xl">
-        <div class="grid gap-8 lg:grid-cols-[0.75fr_1.25fr] lg:items-end">
-          <div>
-            <p class="font-mono text-xs uppercase text-primary">PROFESSIONAL EXPERIENCE</p>
-            <h2 id="experience-title" class="mt-4 font-headline text-4xl font-bold md:text-6xl">Samsung R&amp;D Institute</h2>
-          </div>
-          <div>
-            <p class="font-headline text-xl font-medium" data-pl="Automotive Software Tester with Python, Linux i SoC" data-en="Automotive Software Tester with Python, Linux, and SoC">Automotive Software Tester with Python, Linux i SoC</p>
-            <p class="mt-3 text-sm text-on-surface-variant" data-pl="od 1 kwietnia 2026" data-en="since April 1, 2026">od 1 kwietnia 2026</p>
-          </div>
-        </div>
-        <div class="experience-grid mt-14">
-          <article class="experience-item">
-            <span class="material-symbols-outlined text-primary" aria-hidden="true">automation</span>
-            <h3 class="mt-5 font-headline text-2xl font-bold">Test Automation</h3>
-            <p class="mt-4 text-sm leading-relaxed text-on-surface-variant" data-pl="Skrypty testowe w Pythonie, joby Jenkins, powtarzalne uruchomienia i analiza wyników z farmy płytek." data-en="Python test scripts, Jenkins jobs, repeatable execution, and result analysis from a board farm.">Skrypty testowe w Pythonie, joby Jenkins, powtarzalne uruchomienia i analiza wyników z farmy płytek.</p>
-          </article>
-          <article class="experience-item">
-            <span class="material-symbols-outlined text-secondary" aria-hidden="true">memory</span>
-            <h3 class="mt-5 font-headline text-2xl font-bold">Embedded Linux</h3>
-            <p class="mt-4 text-sm leading-relaxed text-on-surface-variant" data-pl="Praca bezpośrednio w Linuxie z płytkami automotive, konfiguracją środowiska oraz zachowaniem kernel/userspace." data-en="Hands-on Linux work with automotive boards, environment setup, and kernel/userspace behavior.">Praca bezpośrednio w Linuxie z płytkami automotive, konfiguracją środowiska oraz zachowaniem kernel/userspace.</p>
-          </article>
-          <article class="experience-item">
-            <span class="material-symbols-outlined text-tertiary" aria-hidden="true">monitor_heart</span>
-            <h3 class="mt-5 font-headline text-2xl font-bold">System Diagnostics</h3>
-            <p class="mt-4 text-sm leading-relaxed text-on-surface-variant" data-pl="Analiza logów i problemów na styku kodu, systemu operacyjnego, SoC i sprzętu testowego." data-en="Log analysis and diagnostics at the boundary between code, the operating system, SoC, and test hardware.">Analiza logów i problemów na styku kodu, systemu operacyjnego, SoC i sprzętu testowego.</p>
-          </article>
-        </div>
-        <p class="mt-8 max-w-4xl border-l-2 border-primary/60 pl-4 text-sm leading-relaxed text-on-surface-variant"><strong class="text-on-background" data-pl="Mój wkład:" data-en="My contribution:">Mój wkład:</strong> <span data-pl="rozwój i utrzymanie automatyzacji, obsługa środowisk testowych oraz diagnozowanie problemów w systemach embedded." data-en="developing and maintaining automation, operating test environments, and diagnosing issues in embedded systems.">rozwój i utrzymanie automatyzacji, obsługa środowisk testowych oraz diagnozowanie problemów w systemach embedded.</span></p>
-      </div>
-    </section>
-    <section class="px-8 py-28 md:py-36" aria-labelledby="selected-work-title">
-      <div class="mx-auto max-w-7xl">
-        <p class="font-mono text-xs uppercase text-primary">SELECTED WORK</p>
-        <h2 id="selected-work-title" class="mt-4 font-headline text-4xl font-bold md:text-6xl" data-pl="Pozostałe doświadczenie" data-en="Other experience">Pozostałe doświadczenie</h2>
-        <div class="mt-14 grid gap-x-16 gap-y-12 lg:grid-cols-2">
-          <article class="border-t border-white/10 pt-7">
-            <div class="flex flex-wrap items-start justify-between gap-4">
-              <div><h3 class="font-headline text-3xl font-bold">Fundacja Sorno</h3><p class="mt-2 text-on-surface-variant">Fullstack Developer</p></div>
-              <span class="font-mono text-xs uppercase text-on-surface-variant">2024 - 2026</span>
-            </div>
-            <p class="mt-6 leading-relaxed text-on-surface-variant" data-pl="Zaprojektowałem i wdrożyłem system medyczny end-to-end: portal klienta, backend, aplikację mobilną, publikację wyników badań, płatności i integracje danych." data-en="I designed and delivered an end-to-end medical system: a client portal, backend, mobile app, medical result publishing, payments, and data integrations.">Zaprojektowałem i wdrożyłem system medyczny end-to-end: portal klienta, backend, aplikację mobilną, publikację wyników badań, płatności i integracje danych.</p>
-            <div class="mt-6 flex flex-wrap gap-2"><span class="stack-chip">Python</span><span class="stack-chip">FastAPI</span><span class="stack-chip">Flutter</span><span class="stack-chip">Firebase</span><span class="stack-chip">MongoDB</span><span class="stack-chip">GCP</span></div>
-          </article>
-          <article class="border-t border-white/10 pt-7">
-            <div class="flex flex-wrap items-start justify-between gap-4">
-              <div><h3 class="font-headline text-3xl font-bold">Tikrow</h3><p class="mt-2 text-on-surface-variant" data-pl="QA Tester i analiza danych" data-en="QA Tester and data analysis">QA Tester i analiza danych</p></div>
-              <span class="font-mono text-xs uppercase text-on-surface-variant">2024 - 2026</span>
-            </div>
-            <p class="mt-6 leading-relaxed text-on-surface-variant" data-pl="Łączyłem testowanie API i logiki systemu z analizą danych oraz modelami ML do wykrywania anomalii i wzorców w konkretnych przypadkach biznesowych." data-en="I combined API and system-logic testing with data analysis and ML models for anomaly and pattern detection in concrete business cases.">Łączyłem testowanie API i logiki systemu z analizą danych oraz modelami ML do wykrywania anomalii i wzorców w konkretnych przypadkach biznesowych.</p>
-            <div class="mt-6 flex flex-wrap gap-2"><span class="stack-chip">Python</span><span class="stack-chip">API</span><span class="stack-chip">SQL</span><span class="stack-chip">Custom ML</span><span class="stack-chip">Postman</span></div>
-          </article>
-        </div>
-        <div class="other-work mt-20">
-          <details class="project-card">
-            <summary>
-              <div><p class="font-mono text-xs uppercase text-on-surface-variant" data-pl="Mniej rozbudowane realizacje" data-en="Smaller deliveries">Mniej rozbudowane realizacje</p><h3 class="mt-2 font-headline text-2xl font-bold" data-pl="Strony WWW dla organizacji i biznesu" data-en="Websites for organizations and businesses">Strony WWW dla organizacji i biznesu</h3></div>
-              <span class="material-symbols-outlined text-primary" aria-hidden="true">add</span>
-            </summary>
-            <div class="grid gap-8 pb-10 md:grid-cols-2">
-              <p class="leading-relaxed text-on-surface-variant" data-pl="Landing page dla szkółki żeglarskiej oraz dwie strony dla fundacji. Odpowiadałem za strukturę treści, frontend, responsywność, UX i publikację." data-en="A landing page for a sailing school and two websites for a foundation. I handled content structure, frontend, responsive behavior, UX, and publishing.">Landing page dla szkółki żeglarskiej oraz dwie strony dla fundacji. Odpowiadałem za strukturę treści, frontend, responsywność, UX i publikację.</p>
-              <div class="flex flex-wrap content-start gap-2"><span class="stack-chip">HTML</span><span class="stack-chip">CSS</span><span class="stack-chip">JavaScript</span><span class="stack-chip">UX</span></div>
-            </div>
-          </details>
+          </section>
         </div>
       </div>
     </section>
-    <section class="bg-surface-container-low px-8 py-24 md:py-28" aria-labelledby="training-title">
-      <div class="mx-auto max-w-7xl">
-        <div class="grid gap-10 lg:grid-cols-[0.65fr_1.35fr]">
-          <div>
-            <p class="font-mono text-xs uppercase text-on-surface-variant">TRAINING</p>
-            <h2 id="training-title" class="mt-4 font-headline text-3xl font-bold md:text-4xl" data-pl="Certyfikaty i szkolenia" data-en="Certifications and training">Certyfikaty i szkolenia</h2>
-          </div>
-          <div class="divide-y divide-white/10 border-y border-white/10">
-            <div class="grid gap-2 py-5 md:grid-cols-[1fr_auto]"><p class="font-headline text-lg font-semibold">AWS Cloud Foundations</p><p class="text-sm text-on-surface-variant">AWS Academy</p></div>
-            <div class="grid gap-2 py-5 md:grid-cols-[1fr_auto]"><p class="font-headline text-lg font-semibold">AWS Cloud Developing</p><p class="text-sm text-on-surface-variant">AWS Academy</p></div>
-            <div class="grid gap-2 py-5 md:grid-cols-[1fr_auto]"><p class="font-headline text-lg font-semibold" data-pl="RAG i budowa agentów AI" data-en="RAG and AI agent systems">RAG i budowa agentów AI</p><p class="text-sm text-on-surface-variant" data-pl="Intel + Politechnika Poznańska" data-en="Intel + Poznan University of Technology">Intel + Politechnika Poznańska</p></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="px-8 py-28 md:py-36">
-      <div class="mx-auto max-w-7xl border-t border-white/10 pt-16 text-center">
-        <p class="font-mono text-xs uppercase text-primary">NEXT PROJECT</p>
-        <h2 class="mx-auto mt-5 max-w-4xl font-headline text-4xl font-bold leading-tight md:text-6xl">Interested in working together?</h2>
-        <p class="mx-auto mt-5 max-w-2xl text-lg text-on-surface-variant" data-pl="Porozmawiajmy o C++, Linuxie, systemach embedded, performance engineering albo projekcie wymagającym mocnego zaplecza technicznego." data-en="Let's talk about C++, Linux, embedded systems, performance engineering, or a project that needs strong technical foundations.">Porozmawiajmy o C++, Linuxie, systemach embedded, performance engineering albo projekcie wymagającym mocnego zaplecza technicznego.</p>
-        <div class="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
-          <a class="case-action case-action--primary" href="contact.html"><span class="material-symbols-outlined text-base" aria-hidden="true">mail</span><span data-pl="Kontakt" data-en="Contact">Kontakt</span></a>
-          <a class="case-action case-action--secondary" href="https://github.com/Adam-Sapiecha" target="_blank" rel="noreferrer"><span class="material-symbols-outlined text-base" aria-hidden="true">code</span>GitHub</a>
-        </div>
-      </div>
-    </section>
+
   </main>
 
-  <footer class="w-full border-t border-[#1b2028] bg-[#0a0e14] py-12">
-    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-8 md:flex-row">
-      <div class="font-['Inter'] text-sm uppercase text-[#f1f3fc]/50" data-pl="Copyright 2026 Adam Sapiecha" data-en="Copyright 2026 Adam Sapiecha">Copyright 2026 Adam Sapiecha</div>
-      <div class="flex gap-8">
-        <a class="font-['Inter'] text-sm uppercase text-[#f1f3fc]/50 opacity-80 transition-colors hover:text-[#00FF9C] hover:opacity-100" href="https://github.com/Adam-Sapiecha" target="_blank" rel="noreferrer">GitHub</a>
-        <a class="font-['Inter'] text-sm uppercase text-[#f1f3fc]/50 opacity-80 transition-colors hover:text-[#00FF9C] hover:opacity-100" href="https://www.linkedin.com/in/adam-sapiecha-686057314/" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a class="font-['Inter'] text-sm uppercase text-[#f1f3fc]/50 opacity-80 transition-colors hover:text-[#00FF9C] hover:opacity-100" href="assets/Adam_Sapiecha_CV.pdf" data-href-pl="assets/Adam_Sapiecha_CV.pdf" data-href-en="assets/Adam_Sapiecha_CV.pdf" download="Adam_Sapiecha_CV.pdf" data-download-pl="Adam_Sapiecha_CV.pdf" data-download-en="Adam_Sapiecha_CV.pdf" target="_blank" rel="noreferrer">CV</a>
-      </div>
-    </div>
+  <footer class="site-footer">
+    <div class="page-shell footer-inner"><p>© 2026 Adam Sapiecha</p></div>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>

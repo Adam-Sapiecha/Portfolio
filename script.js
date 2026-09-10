@@ -72,8 +72,6 @@
     languageButtons.forEach((button) => {
       const selected = button.dataset.lang === normalizedLang;
       button.classList.toggle("is-selected", selected);
-      button.classList.toggle("text-primary", selected);
-      button.classList.toggle("text-on-surface-variant", !selected);
       button.setAttribute("aria-pressed", String(selected));
     });
 
@@ -124,8 +122,6 @@
     document.querySelectorAll("[data-nav]").forEach((link) => {
       const active = link.dataset.nav === pageKey;
       link.classList.toggle("is-active", active);
-      link.classList.toggle("text-primary", active);
-      link.classList.toggle("text-on-surface-variant", !active);
 
       if (active) {
         link.setAttribute("aria-current", "page");
@@ -216,26 +212,27 @@
     });
   }
 
-  function setupProjectAccordions() {
-    document.querySelectorAll("details.project-card").forEach((card) => {
-      const summary = card.querySelector("summary");
-      const icon = summary?.querySelector(".material-symbols-outlined");
-
-      if (!summary) {
+  function setupProjectDetails() {
+    const openHashTarget = () => {
+      if (!window.location.hash) {
         return;
       }
 
-      const syncState = () => {
-        summary.setAttribute("aria-expanded", String(card.open));
-      };
-
-      if (icon) {
-        icon.setAttribute("aria-hidden", "true");
+      let id;
+      try {
+        id = decodeURIComponent(window.location.hash.slice(1));
+      } catch {
+        return;
       }
 
-      syncState();
-      card.addEventListener("toggle", syncState);
-    });
+      const target = document.getElementById(id);
+      if (target instanceof HTMLDetailsElement) {
+        target.open = true;
+      }
+    };
+
+    openHashTarget();
+    window.addEventListener("hashchange", openHashTarget);
   }
 
   languageButtons.forEach((button) => {
@@ -246,6 +243,6 @@
 
   setupActiveNav();
   setupMobileMenu();
-  setupProjectAccordions();
+  setupProjectDetails();
   applyLanguage(getInitialLanguage());
 })();
