@@ -38,7 +38,7 @@ Repozytorium ma kilka wariantów prowadzonych na osobnych branchach:
 ├── script.js
 ├── assets/
 │   ├── Portret.png
-│   ├── Adam_Sapiecha_CV.pdf
+│   ├── AdamSapiechaCV.pdf
 │   ├── Autostop1.jpeg
 │   ├── Autostop2.jpg
 │   ├── Góry.jpeg
@@ -51,7 +51,7 @@ Repozytorium ma kilka wariantów prowadzonych na osobnych branchach:
 
 Linki do CV wskazują na istniejący plik:
 
-- `assets/Adam_Sapiecha_CV.pdf`
+- `assets/AdamSapiechaCV.pdf`
 
 Branch `hpc` ma własną kopię tego pliku w `assets/`.
 
